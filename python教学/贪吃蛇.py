@@ -2,17 +2,18 @@
 import random
 #清空终端屏幕
 import os
+#键盘控制
+import turtle
 #地图
 def draw_map (snake,food):
-
+    print("#\t"*12)
     #生成边框
-    for y in range(0, 11):
-        for x in range(0, 11):
+    for y in range(0, 10):
+        print("#",end="\t")
+        for x in range(0, 10):
         #食物
             if   [x,y] == food :
                 print("@",end="\t")
-            elif [x,y] ==[0,0] or [x,y] ==[0,0] :
-                print("#\t" * 13)
                 #蛇头
             elif [x,y] == snake[0]:
                 print("O",end="\t")
@@ -21,7 +22,11 @@ def draw_map (snake,food):
             #地图
             else:
                 print(".", end="\t")
+
+        print("#", end="")
         print()
+    print("#\t"*12)
+
 
 #方向
 def shifting(movement,snake,food) :
@@ -40,6 +45,7 @@ def shifting(movement,snake,food) :
     if food !=[x,y] :
         snake.pop()
     return snake
+
 #撞墙
 def check_wall(snake):
     x = snake[0][0]
@@ -73,13 +79,13 @@ last_movement="右"
 snake = [[3, 3], [2, 3], [1, 3]]
 food = create_food(snake)
 score = 0 #分
-
 while True :
 
     os.system("cls")
     draw_map(snake,food)
     print(f"分数:{score}")
     print("食物位置：", food)
+    print(f"长度:{len(snake)}")
     movement = input("请输入方向（上、下、左、右）:")
 
     if movement not in ["上","下","左","右"]:
