@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="632bfd79-184e-4d59-9601-44482c983b22" name="更改" comment="init pro">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/程序.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/10.迭代器&amp;生成器.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/1类和对象.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/2封装.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/3继承.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/4多态.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/5静态方法&amp;类方法.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/7.正则表达式.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/8.闭包&amp;装饰器.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/9.魔术方法.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/File operations/6.File operations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/File operations/目录.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/pipopa/patrol_robot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/习题.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/困难的小机器人控制.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/练习2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/练习3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/附录：术语解释.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/曼谷题目/P1000 超级玛丽游戏.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/曼谷题目/P1001 A+B Problem.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/曼谷题目/P1008 [NOIP 1998 普及组] 三连击.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python教学/贪吃蛇2.py" beforeDir="false" afterPath="$PROJECT_DIR$/python教学/贪吃蛇2.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="34" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Aertwy&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Aertwy/-.git&quot;,
+    &quot;accountId&quot;: &quot;112e3a55-a74d-46be-a0b6-4e287f16b354&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0004105939527606" />
+      <entry key="MS500" value="1.2102241038134287" />
+      <entry key="S2" value="1.6771277734684464" />
+      <entry key="S5" value="1.8555950256826024" />
+      <entry key="S10" value="1.9249837975243906" />
+      <entry key="S30" value="1.974381273660489" />
+      <entry key="S60" value="1.9974141095511755" />
+      <entry key="M2" value="2.1952318991783146" />
+      <entry key="M5" value="4.4541699856978685" />
+      <entry key="M10" value="11.101695854671634" />
+      <entry key="M15" value="18.234370322002903" />
+      <entry key="M30" value="41.54895263117571" />
+      <entry key="H1" value="90.85887137266315" />
+      <entry key="H2" value="168.64509281001313" />
+      <entry key="H4" value="278.654308664734" />
+      <entry key="D1" value="1555.4996760437934" />
+      <entry key="W1" value="5395.905499638045" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="5.389297054007285E-96" />
+      <entry key="S5" value="7.809313350557873E-39" />
+      <entry key="S10" value="8.837316838921659E-20" />
+      <entry key="S30" value="4.5959816730797454E-7" />
+      <entry key="S60" value="7.881246463409128E-4" />
+      <entry key="M2" value="0.03817358699854229" />
+      <entry key="M5" value="0.49481097457508877" />
+      <entry key="M10" value="1.3424321618781994" />
+      <entry key="M15" value="2.0526127829132963" />
+      <entry key="M30" value="4.514590231031794" />
+      <entry key="H1" value="10.788900982591796" />
+      <entry key="H2" value="21.493850359706535" />
+      <entry key="H4" value="36.874093335194196" />
+      <entry key="D1" value="188.05668560026373" />
+      <entry key="W1" value="626.5053364066387" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9529832650269385" />
+      <entry key="MS500" value="1.1934059710220835" />
+      <entry key="S2" value="1.6688631766545863" />
+      <entry key="S5" value="1.8516649564068601" />
+      <entry key="S10" value="1.9228972253949757" />
+      <entry key="S30" value="1.97365608135364" />
+      <entry key="S60" value="1.997657223801294" />
+      <entry key="M2" value="2.2313373163381636" />
+      <entry key="M5" value="4.94253138849688" />
+      <entry key="M10" value="12.435891620402394" />
+      <entry key="M15" value="20.278299668579823" />
+      <entry key="M30" value="46.053728460747045" />
+      <entry key="H1" value="101.63688857077774" />
+      <entry key="H2" value="190.12884048158986" />
+      <entry key="H4" value="315.52009776393413" />
+      <entry key="D1" value="1743.5480257040304" />
+      <entry key="W1" value="6022.406376496799" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3KdSykMTzJlFY0I1U99DnmnDSXt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.10.迭代器&amp;生成器.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2封装.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3继承.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4多态.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5静态方法&amp;类方法.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6.File operations.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6文件操作.executor&quot;: &quot;Run&quot;,
+    &quot;Python.7.正则表达式.executor&quot;: &quot;Run&quot;,
+    &quot;Python.8.闭包&amp;装饰器.executor&quot;: &quot;Run&quot;,
+    &quot;Python.9.魔术方法.executor&quot;: &quot;Run&quot;,
+    &quot;Python.9单例模式&amp;魔术方法.executor&quot;: &quot;Run&quot;,
+    &quot;Python.P1000 超级玛丽游戏.executor&quot;: &quot;Run&quot;,
+    &quot;Python.P1001 A+B Problem.executor&quot;: &quot;Run&quot;,
+    &quot;Python.P1008 [NOIP 1998 普及组] 三连击.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.patrol_robot.executor&quot;: &quot;Run&quot;,
+    &quot;Python.习题.executor&quot;: &quot;Run&quot;,
+    &quot;Python.多态.executor&quot;: &quot;Run&quot;,
+    &quot;Python.封装.executor&quot;: &quot;Run&quot;,
+    &quot;Python.目录.executor&quot;: &quot;Run&quot;,
+    &quot;Python.简单的小机器人控制.executor&quot;: &quot;Run&quot;,
+    &quot;Python.类和对象.executor&quot;: &quot;Run&quot;,
+    &quot;Python.练习.executor&quot;: &quot;Run&quot;,
+    &quot;Python.练习2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.练习3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.贪吃蛇.executor&quot;: &quot;Run&quot;,
+    &quot;Python.贪吃蛇2.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/python/程序/python教学&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\python\程序\python教学" />
+      <recent name="E:\python\程序" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\python\程序\python教学\pipopa" />
+      <recent name="E:\python\程序\python教学" />
+      <recent name="E:\python\程序\曼谷题目" />
+      <recent name="E:\python\程序\教学" />
+      <recent name="E:\python\程序" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="练习" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="程序" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/教学/练习1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="程序" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="E:\python\程序\.venv" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="习题" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="程序" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python教学" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python教学/习题.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.练习" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-73a66231627c-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.10968.92" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="632bfd79-184e-4d59-9601-44482c983b22" name="更改" comment="" />
+      <created>1791886208789</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1791886208789</updated>
+      <workItem from="1791886209837" duration="142000" />
+      <workItem from="1791904649058" duration="1119000" />
+      <workItem from="1791938620470" duration="13097000" />
+      <workItem from="1792032854691" duration="11714000" />
+      <workItem from="1792130929854" duration="86000" />
+      <workItem from="1792143208478" duration="1972000" />
+      <workItem from="1792149984701" duration="4759000" />
+      <workItem from="1792196274794" duration="113000" />
+      <workItem from="1792207354236" duration="34908000" />
+      <workItem from="1792281784954" duration="8242000" />
+      <workItem from="1792299596138" duration="18456000" />
+      <workItem from="1792332489724" duration="479000" />
+      <workItem from="1792333010459" duration="3586000" />
+      <workItem from="1792365169643" duration="28915000" />
+      <workItem from="1792406640319" duration="916000" />
+      <workItem from="1792410198243" duration="12803000" />
+      <workItem from="1792455854203" duration="7662000" />
+      <workItem from="1792478721056" duration="4427000" />
+      <workItem from="1792490324270" duration="1290000" />
+      <workItem from="1792498705473" duration="6417000" />
+      <workItem from="1792557754680" duration="10726000" />
+      <workItem from="1792637465197" duration="18226000" />
+      <workItem from="1792715842733" duration="42936000" />
+      <workItem from="1792802093947" duration="6036000" />
+      <workItem from="1792808204431" duration="330000" />
+      <workItem from="1792808570371" duration="2154000" />
+      <workItem from="1792810772714" duration="40174000" />
+      <workItem from="1792889127083" duration="32287000" />
+      <workItem from="1793001019500" duration="9150000" />
+      <workItem from="1793067143177" duration="6649000" />
+      <workItem from="1793089223800" duration="2528000" />
+      <workItem from="1793092823738" duration="13928000" />
+      <workItem from="1793146979197" duration="25564000" />
+    </task>
+    <task id="LOCAL-00001" summary="init pro">
+      <option name="closed" value="true" />
+      <created>1792848266785</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1792848266785</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init pro" />
+    <option name="LAST_COMMIT_MESSAGE" value="init pro" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="NONE" type="python-line">
+          <url>file://$PROJECT_DIR$/python教学/5静态方法&amp;类方法.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/$4.coverage" NAME="4多态 覆盖结果" MODIFIED="1792318610008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$1.coverage" NAME="1 覆盖结果" MODIFIED="1792928112718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
+    <SUITE FILE_PATH="coverage/$6_File_operations.coverage" NAME="6.File operations 覆盖结果" MODIFIED="1792367759133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/File operations" />
+    <SUITE FILE_PATH="coverage/$P1001_A_B_Problem.coverage" NAME="P1001 A+B Problem 覆盖结果" MODIFIED="1792743148165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/曼谷题目" />
+    <SUITE FILE_PATH="coverage/$P1000_.coverage" NAME="P1000 超级玛丽游戏 覆盖结果" MODIFIED="1792743227205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/曼谷题目" />
+    <SUITE FILE_PATH="coverage/$.coverage" NAME="简单的小机器人控制 覆盖结果" MODIFIED="1793099114846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
+    <SUITE FILE_PATH="coverage/$main.coverage" NAME="练习 覆盖结果" MODIFIED="1791941947296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$patrol_robot.coverage" NAME="patrol_robot 覆盖结果" MODIFIED="1793195643128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/pipopa" />
+    <SUITE FILE_PATH="coverage/$9_.coverage" NAME="9.魔术方法 覆盖结果" MODIFIED="1792403810586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$7_.coverage" NAME="7.正则表达式 覆盖结果" MODIFIED="1792385030962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$10__.coverage" NAME="10.迭代器&amp;生成器 覆盖结果" MODIFIED="1792499227451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
+    <SUITE FILE_PATH="coverage/$5_.coverage" NAME="5静态方法&amp;类方法 覆盖结果" MODIFIED="1792329550314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$3.coverage" NAME="3继承 覆盖结果" MODIFIED="1792286641541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$2.coverage" NAME="贪吃蛇2 覆盖结果" MODIFIED="1792931590266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
+    <SUITE FILE_PATH="coverage/$P1008__NOIP_1998___.coverage" NAME="P1008 [NOIP 1998 普及组] 三连击 覆盖结果" MODIFIED="1792423112675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/曼谷题目" />
+    <SUITE FILE_PATH="coverage/$8__.coverage" NAME="8.闭包&amp;装饰器 覆盖结果" MODIFIED="1792647703273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
+    <SUITE FILE_PATH="coverage/$6.coverage" NAME="6文件操作 覆盖结果" MODIFIED="1792331418333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/文件操作" />
+  </component>
+</project>

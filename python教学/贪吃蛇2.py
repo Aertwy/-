@@ -31,44 +31,37 @@ def initialization() :
     food.penup()
     food.goto(80, 100)
     #边框
-
     wall = turtle.Turtle()
     wall.color("black")
-    wall.penup()  # 不线
+    wall.penup()  # 抬起画笔
     wall.hideturtle()  # 隐藏光标
-
     wall.goto(-330, 330)  # 左上
-    wall.pendown()
-
+    wall.pendown()  #落下画笔
     wall.goto(330, 330)  # 右上
     wall.pendown()
-
-
     wall.goto(330, -330)  # 右下角
-
-
-
     wall.pendown()
     wall.goto(-330, -330)  # 左下
-
     wall.pendown()
-
     wall.goto(-330, 330)  # 左上
     wall.pendown()
 initialization()
 #                                                                                                                                                                                                                                                           #看不到我喵
 class MM:
     def __init__(self,dx,dy,score):
+        #self.dx是对象的属性，dx是参数，mm是对象
         self.dx = dx
         self.dy = dy
         self.score = score
         self.game_over =False
+        self.can_turn = True
 
     # 移动喵
     def move(self,dx, dy):
         x,y = turtle.xcor(),turtle.ycor()
         x, y = x + dx, y + dy
         turtle.goto(x, y)
+
     #生成一个蛇身
     def create_body(self):
         body = turtle.Turtle()
@@ -79,19 +72,24 @@ class MM:
         return body
     # 上
     def move_up(self):
-        if self.dy != -20:
+        if self.dy != -20 and self.can_turn == True:
+
+            self.can_turn = False
             self.dx, self.dy = 0, +20
     # 下
-    def move_down(self):
-        if self.dy != +20:
+    def move_down(self) :
+        if self.dy != +20 and self.can_turn == True:
+            self.can_turn = False
             self.dx, self.dy = 0, -20
     # 左
     def move_left(self):
-        if self.dx != +20:
+        if self.dx != +20 and self.can_turn == True:
+            self.can_turn = False
             self.dx,self.dy = -20,0
     # 右
     def move_right(self):
-        if self.dx != -20:
+        if self.dx != -20 and self.can_turn == True:
+            self.can_turn = False
             self.dx,self.dy = +20,0
     #吃掉食物,生成食物
     def check_food(self):
@@ -128,8 +126,8 @@ class MM:
             x, y = bodies[b - 1].pos()
             bodies[b].goto(x,y)
         #0号蛇身移动到蛇头的位置
-
         bodies[0].goto(x1, y1)
+        self.can_turn = True
         self.move(self.dx, self.dy) #移动
         self.check_food()
         if not self.check_wall() and not self.check_self():#判断撞墙or自撞
@@ -139,7 +137,7 @@ class MM:
             score_writer.clear()
             score_writer.goto(0, 0)
             score_writer.write(
-                f"游戏结束\n最终分数为:{self.score}\n按R重来""",
+                f"游戏结束\n最终分数为:{self.score}\n按R重来",
                 align="center",                 #center：居中
                 font=("Arial", 24, "bold")      #bold:粗体
             )
@@ -174,14 +172,9 @@ class MM:
             food.goto(80, 100)
             self.game_over = False
 
-
-
-
-
 mm=MM(20,0,0)
 score_writer.write("分数：0",)
 # 创建蛇身
-
 body0,body1 = mm.create_body(),mm.create_body()
 body0.goto(-20,0)
 body1.goto(-40,0)
@@ -195,10 +188,9 @@ screen.onkey(mm.move_up, "W")
 screen.onkey(mm.move_down, "S")
 screen.onkey(mm.move_left, "A")
 screen.onkey(mm.move_right, "D")
-
 # 进入图形事件循环，让窗口保持响应
 turtle.done()
-
+#如果从前开始往前走，会导致后面的读取到错误的位置
 
 
 
