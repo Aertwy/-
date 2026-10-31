@@ -10,19 +10,24 @@ class PatrolRobot:
         self.has_turned = False #重复转向
         self.search_count = 0 #搜索次数
         self.saved_count = 0 #保存数
+        self.dir = ["北", "西", "南", "东"]
         print(f"机器人初始化:{self.status}")
         print("======= 开始运行喵 =======")
     #巡逻模式
     def start_patrol(self):
-        self.status = "巡逻中"
-        print(f"机器人启动:{self.status}")
-        #日志
-        self.history.append(f"机器人启动：{self.status}")
+        if self.status != "巡逻中":
+            self.start_count += 1
+            self.status = "巡逻中"
+            print(f"机器人启动:{self.status}")
+            #日志
+            self.history.append(f"机器人启动：{self.status}")
     #停止模式
     def stop(self):
-        self.status = "停止"
-        print(f"机器人停止:{self.status}")
-        self.history.append(f"机器人停止：{self.status}")
+        if self.status != "停止":
+            self.stop_count += 1
+            self.status ="停止"
+            print(f"机器人停止:{self.status}")
+            self.history.append(f"机器人停止：{self.status}")
     #是否有障碍
     def detect_obstacle(self, obstacle):
         if obstacle :
@@ -39,7 +44,6 @@ class PatrolRobot:
         if  front_obstacle  :
             if self.status != "停止":
                 print("检测到障碍物！")
-                self.stop_count += 1
                 self.stop()
             if not self.has_turned:
                 # 左边无障碍就左转
@@ -56,51 +60,56 @@ class PatrolRobot:
         else:
             self.has_turned = False
             if self.status != "巡逻中" :
-                self.start_count +=1
                 self.start_patrol()
     #左转喵
-    def  turn_left(self):
-
-        if  self.direction == "北":
-            self.direction = "西"
-
-        elif self.direction == "西":
-            self.direction = "南"
-
-        elif self.direction == "南":
-            self.direction = "东"
-
-        elif self.direction == "东":
-            self.direction = "北"
+    def turn_left(self):
+        #找到在self.dir.index的括号里的就下标返回i
+        i = self.dir.index(self.direction)
+        #方向=(i＋1)%4---------%4可以当i=4的时候4%4=0
+        self.direction = self.dir[(i+1)%4]
         print(f"左转90度喵，方向:{self.direction}")
         self.history.append(f"左转90度，当前方向：{self.direction}")
     #右转喵
     def turn_right(self):
-        if  self.direction == "北":
-            self.direction = "东"
+        i = self.dir.index(self.direction)
+        # 方向=(i-1)%4---------%4可以当i=4的时候4%4=0
+        self.direction = self.dir[(i - 1) % 4]
 
-        elif self.direction == "西":
-            self.direction = "北"
-
-        elif self.direction == "南":
-            self.direction = "西"
-
-        elif self.direction == "东":
-            self.direction = "南"
         print(f"右转90度喵，方向:{self.direction}")
         self.history.append(f"右转90度，当前方向：{self.direction}")
-    #设置障碍
+    #设置障碍TypeError
     def run_patrol(self, sensor_data):
-        for i in sensor_data:
-            self.auto_move(i[0],i[1],i[2])
+        for n in sensor_data:
+            a = False
+            try:
+                if not isinstance(n, list) or len(n) != 3 :
+                    a=True
+                    continue
+                else:
+                    if (isinstance(n[0], bool)
+                            and
+                            isinstance(n[1], bool)
+                            and
+                            isinstance(n[2], bool)
+                    ):
+                        self.auto_move(n[0], n[1], n[2])
+                    else:
+                        a = True
+            finally:
+                if a :
+                    print("错误:障碍设置异常喵")
+
     #状态管理
     def show_status(self):
+        print("--------状态管理--------")
         print(f"当前运行状态：{self.status}")
         print(f"当前方向：{self.direction}")
         print(f"是否已经转向：{self.has_turned}")
         print(f"启动次数：{self.start_count}")
         print(f"停止次数：{self.stop_count}")
         print(f"查找有效次数：{self.search_count}")
+        print(f"有效保存日志次数:{self.saved_count}")
+        print("------------------------")
     #日志管理
     def show_history(self):
         print("===== 机器人行动日志 =====")
@@ -112,8 +121,11 @@ class PatrolRobot:
     #最近三条日志
     def show_recent_history(self):
         print("===== 机器人近三条行动日志 =====")
-        for num,i in enumerate(self.history[-3:],1):
-            print(f"{num}. {i}")
+        if self.history:
+            for num,i in enumerate(self.history[-3:],1):
+                print(f"{num}. {i}")
+        else:
+            print("机器人还没有行动记录喵！")
     #清除日志喵
     def clear_history(self):
         self.history.clear()
@@ -165,9 +177,9 @@ class PatrolRobot:
             for log in self.history:
                 t +=1
                 f.write(f"{t}. {log}\n")
-
-            print("-"*15,"\n日志保存成功!")
-            print("-"*15)
+        print("-" * 15, "\n日志保存成功!")
+        print("-" * 15)
+        self.saved_count += 1
     # 读取保存的日志
     def read_log(self):
         #try尝试执行可能发生异常的代码
@@ -203,10 +215,51 @@ class PatrolRobot:
             print("-" * 20)
             print("日志读取操作结束喵!")
             print("-" * 20)
-
-
 r1 = PatrolRobot()
 #前面障碍，左边障碍，右边障碍
+sensor_data=[
+[True,True,1],
+[True,True,True,True],
+{True,True,True},
+{"1":1,"2":2,"3":3},
+(True,True,True),
+1,
+[True,"你好",True],
+[0,True,True],
+[True,False,False],
+]
+r1.run_patrol(sensor_data)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

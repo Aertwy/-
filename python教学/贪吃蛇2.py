@@ -176,7 +176,7 @@ mm=MM(20,0,0)
 score_writer.write("分数：0",)
 # 创建蛇身
 body0,body1 = mm.create_body(),mm.create_body()
-body0.goto(-20,0)
+body0.gotob (-20,0)
 body1.goto(-40,0)
 bodies=[body0, body1]
 

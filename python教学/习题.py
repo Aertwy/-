@@ -75,17 +75,17 @@ print(f"数字次数:{num},"
 """
 li=[10,829,89201,890,890,8]
 # 冒泡排序
-def bubble_sort(arr):
-    n = len(arr)
+def bubble_sort(list1):
+    n = len(list1)
 # 遍历所有数组元素
     for i in range(n):
 # 内循环每次将最大值放在最右边
         for j in range(0, n-i-1):
-            if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
+            if list1[j] > list1[j+1]:
+                list1[j], list1[j+1] = list1[j+1], list1[j]
     # 打印
-    for i in range(len(arr)):
-        print ("%d" %arr[i])#
+    for i in range(len(list1)):
+        print ("%d" %list1[i])#
 # bubble_sort(li)
 # 或者
 li.sort(reverse=False)#
@@ -304,9 +304,9 @@ print(sum_squares(6))
 
 #需求：定义一个函数，该函数用于计算并返回给定数字列表中所有数字的总和。
 """
-def sum_squares(list):
+def sum_squares(list1):
     s =0
-    for i in list:
+    for i in list1:
         s+=i
     return s
 li = [10, 20, 30, 40, 50]
@@ -356,7 +356,7 @@ print(remove_list(su1))
 #单列表去重
 """
 def remove_list(list1):
-    combined_list = list(set(list1))
+    combined_list = list1(set(list1))
     return combined_list
 
 su1 = [10, 20, 30, 10, 20]
@@ -366,7 +366,7 @@ print(lie)
 #两列表去重
 """
 def remove_list(list1,list2):
-    combined_list = list(set(list1 + list2))
+    combined_list = list1(set(list1 + list2))
     return combined_list
 su1 = [3, 5, 7, 9, 11, 13]
 su2 = [3, 7, 9, 11,15,1 ]
