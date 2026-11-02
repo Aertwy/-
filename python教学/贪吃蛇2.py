@@ -1,7 +1,8 @@
 import turtle
-#随机数
-import random
 # 创建屏幕
+
+import random
+#随机数
 screen = turtle.Screen()
 #设置长宽
 screen.setup(width=800, height=800)
@@ -168,7 +169,7 @@ class MM:
                 she.hideturtle()
             body0.goto(-20, 0)
             body1.goto(-40, 0)
-            screen.ontimer(self.auto_move, 200)
+            screen.ontimer(self.auto_move, 1)
             food.goto(80, 100)
             self.game_over = False
 
@@ -176,7 +177,7 @@ mm=MM(20,0,0)
 score_writer.write("分数：0",)
 # 创建蛇身
 body0,body1 = mm.create_body(),mm.create_body()
-body0.gotob (-20,0)
+body0.goto (-20,0)
 body1.goto(-40,0)
 bodies=[body0, body1]
 

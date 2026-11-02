@@ -12,6 +12,7 @@ test = [1,24,57,2,4,6879,32,576,879,321,45,678,3,8]
 print(bubble(test))
 """
 #选择排序
+"""
 def choose(num):
     #先将0下标送入min_index里面。len长度为6，会遍历6次
     for i in range(len(num)):
@@ -25,8 +26,97 @@ def choose(num):
         #找到最小的之后就开始替换
         num[i], num[min_index] = num[min_index], num[i]
     return a
-a = [29, 10, 14, 37, 13, 5, 20]
 print(choose(a))
+"""
+
+#冒泡排序
+def bubble(num):
+    while True:
+        f = False
+        for i in range(len(num)-1):
+            if num[i] > num[i + 1]:
+                num[i], num[i + 1] = num[i + 1], num[i]
+                f = True
+        if not f:
+            return num
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
