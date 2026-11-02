@@ -112,4 +112,3 @@ if __name__ is "__main__":
     j = Calculator()
     j.exclu()
 
-

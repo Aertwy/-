@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="632bfd79-184e-4d59-9601-44482c983b22" name="更改" comment="init pro">
-      <change afterPath="$PROJECT_DIR$/python教学/2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python教学/数据结构与算法/计算器/pigm.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python教学/数据结构与算法/计算器/v1.1简单的小计算器.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python教学/数据结构与算法/计算器/简单的小计算器.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python教学/数据结构与算法/默写.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/数据结构与算法/计算器/v1.3简单的小计算器.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/数据结构与算法/计算器/v1.4简单的小计算器.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/数据结构与算法/计算器/草稿.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python教学/1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python教学/数据结构与算法/排序.py" beforeDir="false" afterPath="$PROJECT_DIR$/python教学/数据结构与算法/排序.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python教学/贪吃蛇2.py" beforeDir="false" afterPath="$PROJECT_DIR$/python教学/贪吃蛇2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python教学/数据结构与算法/计算器/v1.1简单的小计算器.py" beforeDir="false" afterPath="$PROJECT_DIR$/python教学/数据结构与算法/计算器/v1.1简单的小计算器.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python教学/数据结构与算法/计算器/简单的小计算器.py" beforeDir="false" afterPath="$PROJECT_DIR$/python教学/数据结构与算法/计算器/v1.0简单的小计算器.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,61 +48,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="8.032865673103932E-29" />
-      <entry key="MS500" value="2.404219420591326E-6" />
-      <entry key="S2" value="0.03937708156530755" />
-      <entry key="S5" value="0.2742189162354672" />
-      <entry key="S10" value="0.5236592384592724" />
-      <entry key="S30" value="0.8120189882393123" />
-      <entry key="S60" value="1.0724680187360216" />
-      <entry key="M2" value="2.298145886569632" />
-      <entry key="M5" value="6.60523523050521" />
-      <entry key="M10" value="10.393949337546319" />
-      <entry key="M15" value="12.269823672866247" />
-      <entry key="M30" value="16.48482528872339" />
-      <entry key="H1" value="31.69700732499135" />
-      <entry key="H2" value="89.33552655465468" />
-      <entry key="H4" value="256.27783081242814" />
-      <entry key="D1" value="1632.4605123779636" />
-      <entry key="W1" value="6462.457401285388" />
+      <entry key="MS100" value="1.0005442366013524" />
+      <entry key="MS500" value="1.313122036019238" />
+      <entry key="S2" value="2.415030118080898" />
+      <entry key="S5" value="3.525246917949812" />
+      <entry key="S10" value="4.409052691232554" />
+      <entry key="S30" value="5.427438262915362" />
+      <entry key="S60" value="6.19340702240383" />
+      <entry key="M2" value="7.337959310675521" />
+      <entry key="M5" value="9.67968834621903" />
+      <entry key="M10" value="13.810302060451239" />
+      <entry key="M15" value="18.862429118632047" />
+      <entry key="M30" value="37.36988503706451" />
+      <entry key="H1" value="76.62134987595508" />
+      <entry key="H2" value="147.31578565396404" />
+      <entry key="H4" value="290.57935015230487" />
+      <entry key="D1" value="1666.5050924694547" />
+      <entry key="W1" value="6624.6324746502305" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000338094082" />
-      <entry key="S2" value="1.0135599907071413" />
-      <entry key="S5" value="1.179020908497597" />
-      <entry key="S10" value="1.423108624938794" />
-      <entry key="S30" value="1.7507309274217582" />
-      <entry key="S60" value="1.8672227249018074" />
-      <entry key="M2" value="1.9586839731760595" />
-      <entry key="M5" value="2.2104880186782627" />
-      <entry key="M10" value="2.474686855115884" />
-      <entry key="M15" value="2.6208040850686616" />
-      <entry key="M30" value="3.197422432400586" />
-      <entry key="H1" value="6.387510910623164" />
-      <entry key="H2" value="17.288576684931297" />
-      <entry key="H4" value="44.21889298638727" />
-      <entry key="D1" value="237.01622120868862" />
-      <entry key="W1" value="818.9737864785133" />
+      <entry key="MS100" value="1.7812723056491662E-43" />
+      <entry key="MS500" value="2.8193309772193044E-9" />
+      <entry key="S2" value="0.007286794398214233" />
+      <entry key="S5" value="0.13964153249106545" />
+      <entry key="S10" value="0.3736873207638612" />
+      <entry key="S30" value="0.7299775282731851" />
+      <entry key="S60" value="0.9471634100606151" />
+      <entry key="M2" value="1.2380316783082113" />
+      <entry key="M5" value="1.8207352641086862" />
+      <entry key="M10" value="2.7418867269870657" />
+      <entry key="M15" value="3.502263381643445" />
+      <entry key="M30" value="5.57028725941266" />
+      <entry key="H1" value="10.646323138782781" />
+      <entry key="H2" value="22.131767322667965" />
+      <entry key="H4" value="46.54790574870322" />
+      <entry key="D1" value="247.10423702735176" />
+      <entry key="W1" value="851.4864498408734" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="6.467181673845119E-12" />
-      <entry key="MS500" value="0.005783747315591514" />
-      <entry key="S2" value="0.3143791439127988" />
-      <entry key="S5" value="0.9902407831113864" />
-      <entry key="S10" value="1.6515501111586157" />
-      <entry key="S30" value="2.4408889285430284" />
-      <entry key="S60" value="2.872334676128844" />
-      <entry key="M2" value="4.214896101325762" />
-      <entry key="M5" value="8.79091313221923" />
-      <entry key="M10" value="12.853334609615112" />
-      <entry key="M15" value="14.879536596963908" />
-      <entry key="M30" value="19.675564117467697" />
-      <entry key="H1" value="38.07867256628771" />
-      <entry key="H2" value="106.61636181207214" />
-      <entry key="H4" value="300.4859714648385" />
-      <entry key="D1" value="1869.466556830911" />
-      <entry key="W1" value="7281.425706784775" />
+      <entry key="MS100" value="0.9080199157274078" />
+      <entry key="MS500" value="1.2886113624678508" />
+      <entry key="S2" value="2.4093356515267628" />
+      <entry key="S5" value="3.6412653783091993" />
+      <entry key="S10" value="4.754899589359887" />
+      <entry key="S30" value="6.139105240895503" />
+      <entry key="S60" value="7.125213965259105" />
+      <entry key="M2" value="8.562043474656724" />
+      <entry key="M5" value="11.489303583641021" />
+      <entry key="M10" value="16.54185595854106" />
+      <entry key="M15" value="22.354748840465877" />
+      <entry key="M30" value="42.93041326790186" />
+      <entry key="H1" value="87.2568557737086" />
+      <entry key="H2" value="169.43608108646495" />
+      <entry key="H4" value="337.11536280442795" />
+      <entry key="D1" value="1913.5987155282883" />
+      <entry key="W1" value="7476.113255910807" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -149,6 +146,7 @@
     "Python.patrol_robot.executor": "Run",
     "Python.runpy.executor": "Run",
     "Python.v1.1简单的小计算器.executor": "Run",
+    "Python.v1.3简单的小计算器.executor": "Run",
     "Python.习题.executor": "Run",
     "Python.多态.executor": "Run",
     "Python.封装.executor": "Run",
@@ -162,6 +160,7 @@
     "Python.练习.executor": "Run",
     "Python.练习2.executor": "Run",
     "Python.练习3.executor": "Run",
+    "Python.草稿.executor": "Run",
     "Python.贪吃蛇.executor": "Run",
     "Python.贪吃蛇2.executor": "Run",
     "Python.默写.executor": "Run",
@@ -181,7 +180,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "settings.editor.selected.configurable": "cn.yiiguxing.plugin.translate",
+    "settings.editor.selected.configurable": "PyPlotsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -334,7 +333,7 @@
       <workItem from="1793268114558" duration="34253000" />
       <workItem from="1793407635441" duration="36712000" />
       <workItem from="1793499421638" duration="40475000" />
-      <workItem from="1793591188828" duration="9234000" />
+      <workItem from="1793591188828" duration="31167000" />
     </task>
     <task id="LOCAL-00001" summary="init pro">
       <option name="closed" value="true" />
@@ -360,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793454788250</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="init pro">
+      <option name="closed" value="true" />
+      <created>1793606917835</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1793606917835</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,16 +415,17 @@
     <SUITE FILE_PATH="coverage/$4.coverage" NAME="4多态 覆盖结果" MODIFIED="1792318610008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$1.coverage" NAME="1 覆盖结果" MODIFIED="1793597385752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
     <SUITE FILE_PATH="coverage/$10_30.coverage" NAME="10.30 覆盖结果" MODIFIED="1793325951677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot" />
+    <SUITE FILE_PATH="coverage/$v1_3.coverage" NAME="v1.3简单的小计算器 覆盖结果" MODIFIED="1793628978509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/数据结构与算法/计算器" />
     <SUITE FILE_PATH="coverage/$6_File_operations.coverage" NAME="6.File operations 覆盖结果" MODIFIED="1792367759133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/File operations" />
     <SUITE FILE_PATH="coverage/$P1001_A_B_Problem.coverage" NAME="P1001 A+B Problem 覆盖结果" MODIFIED="1792743148165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/曼谷题目" />
     <SUITE FILE_PATH="coverage/$P1000_.coverage" NAME="P1000 超级玛丽游戏 覆盖结果" MODIFIED="1792743227205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/曼谷题目" />
-    <SUITE FILE_PATH="coverage/$.coverage" NAME="简单的小计算器 覆盖结果" MODIFIED="1793594843350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/数据结构与算法/计算器" />
+    <SUITE FILE_PATH="coverage/$.coverage" NAME="草稿 覆盖结果" MODIFIED="1793625578983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/数据结构与算法/计算器" />
     <SUITE FILE_PATH="coverage/$main.coverage" NAME="练习 覆盖结果" MODIFIED="1791941947296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$patrol_robot.coverage" NAME="patrol_robot 覆盖结果" MODIFIED="1793340799442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/pipopa" />
     <SUITE FILE_PATH="coverage/$9_.coverage" NAME="9.魔术方法 覆盖结果" MODIFIED="1792403810586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$7_.coverage" NAME="7.正则表达式 覆盖结果" MODIFIED="1792385030962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$10__.coverage" NAME="10.迭代器&amp;生成器 覆盖结果" MODIFIED="1792499227451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
-    <SUITE FILE_PATH="coverage/$v1_1.coverage" NAME="v1.1简单的小计算器 覆盖结果" MODIFIED="1793606147765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/数据结构与算法/计算器" />
+    <SUITE FILE_PATH="coverage/$v1_1.coverage" NAME="v1.1简单的小计算器 覆盖结果" MODIFIED="1793609966896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/数据结构与算法/计算器" />
     <SUITE FILE_PATH="coverage/$5_.coverage" NAME="5静态方法&amp;类方法 覆盖结果" MODIFIED="1792329550314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$3.coverage" NAME="3继承 覆盖结果" MODIFIED="1792286641541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$A.coverage" NAME="A 覆盖结果" MODIFIED="1793344712125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
