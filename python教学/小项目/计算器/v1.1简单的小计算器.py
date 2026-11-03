@@ -55,8 +55,8 @@ class Calculator:
     #计算
     def calculate(self):
         #初始化
-        opera1 = 0#下标
-        result = 0#计算结果
+        opera1 = 0   #下标
+        result = 0   #计算结果
         state = False#是否有乘除
         self.result = 0
         while len(self.operators) != 0:

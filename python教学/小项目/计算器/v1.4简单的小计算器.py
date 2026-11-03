@@ -1,16 +1,17 @@
 import re
 import tkinter as tk
+
 class Window:
     def __init__(self):
         # ====================屏幕初始化==============================
         self.expression = ""
         self.root = tk.Tk()
         self.root.title("简单的小计算器(～￣▽￣)～")
-        self.root.geometry("410x570")
+        self.root.geometry("410x540")
         # 设定是否能够改变窗口的宽和高尺寸
         self.root.resizable(False, False)
         # 窗口图标
-        self.root.iconbitmap('pigm.ico')
+        #self.root.iconbitmap('pigm.ico')
         # 颜色
         self.root.config(bg="#123F3C")
         for i in range(4):
@@ -40,7 +41,6 @@ class Window:
             "eq_bg": "#FF7043",  # 珊瑚橙（青的互补色，跳得出来）
             "eq_fg": "#FFFFFF",
             "eq_active": "#E85D3A",
-
             # 清除 C（喵系柔粉）
             "clear_bg": "#F8BBD0",
             "clear_fg": "#7A2E4B",
@@ -63,17 +63,17 @@ class Window:
         }
         self.button = []
         for index, i in enumerate(positions):
+
             row, column = positions[i]
+
             button = tk.Button(
                 self.root,
                 text=i,  # 字
                 font=("微软雅黑", 30, "bold"),  # 字体
                 bg=color["num_bg"],  # 按钮背景色
                 fg=color["num_fg"],  # 按钮字体色
-                activebackground=color["num_active"],
-                command=lambda x=i: self.input_num(x)
-            )
-
+                activebackground=color["num_active"],#背景
+                command=lambda x=i: self.input_num(x))#按下执行
             button.grid(row=row,column=column,sticky="nsew",padx=4,pady=4)
             self.button.append(button)
 
@@ -83,23 +83,9 @@ class Window:
         # 字符串！创建！
         self.display = tk.StringVar(self.root)
         # 文本框！创建！
-        self.input_box = tk.Entry(self.root, textvariable=self.display)
-        self.input_box.config(
-            font=("微软雅黑", 25),
-            justify="right",
-            bg="#123F3C",
-            fg="#BFF5EF",
-            insertbackground="white"
-        )
-        self.input_box.grid(
-            row=0,
-            column=0,
-            columnspan=4,
-            sticky="ew",
-            padx=8,
-            pady=12
-        )
-        # =================加减乘除=======================
+        self.input_box = tk.Entry(self.root, textvariable=self.display,font=("微软雅黑", 25),justify="right",bg="#123F3C",fg="#BFF5EF")
+        self.input_box.grid(row=0,column=0,columnspan=4)
+#======================加减乘除======================
         buttons = ["÷", "×", "-", "+", ]
         self.operation = []
         for index, i in enumerate(buttons):
@@ -123,7 +109,7 @@ class Window:
                                command=self.clear1)
         self.clear.grid(row=4, column=0, sticky="nsew", padx=4, pady=4)
         # =================删除=======================
-        self.dele = tk.Button(self.root, text="X",  # 字
+        self.dele = tk.Button(self.root, text="Del",  # 字
                               font=("微软雅黑", 30, "bold"),  # 字体
                               bg=color["op_bg"],  # 按钮背景色
                               fg=color["op_fg"],  # 按钮字体色
@@ -150,6 +136,8 @@ class Window:
         self.decimal.grid(row=4, column=2, sticky="nsew", padx=4, pady=4)
         #实例化下面的计算机喵
         self.calculator = Calculator()
+
+        self.message = None
         #错误提示
         self.warning = ""
         self.root.mainloop()#循环
@@ -161,28 +149,31 @@ class Window:
             if self.calculator.calculate():
                 return self.calculator.result
             else:
-                message = self.calculator.error()
-                return message#要是返回else就说明已经报错了
+                self.message = self.calculator.error()
+                return self.message#要是返回else就说明已经报错了
         else:
-            message = self.calculator.error()
-            return message
-
-
+            self.message = self.calculator.error()
+            return self.message
 
     # 等于
     def equals1(self):
         self.display.set(self.expression)
-        return1 = self.run()
-        #return1是整数和浮点数
-        if isinstance(return1, (int, float)):
-            #格式化，可以去0
-            self.expression = f"{return1:g}"
+        #按下等号显示信息等于报错信息就清除掉，要不然会导致值错误
+        if self.expression==self.message:
+            self.expression = ""
 
         else:
-            #如果是字符串就转字符串
-            self.expression = str(return1)
+            return1 = self.run()
+            # return1是整数和浮点数
+            if isinstance(return1, (int, float)):
+            #格式化，可以去0
+                self.expression = f"{return1:g}"
+
+            else:
+                # 如果是字符串就转字符串
+                self.expression = str(return1)
+                self.display.set(self.expression)
             self.display.set(self.expression)
-        self.display.set(self.expression)
 
     # 删除
     def dele1(self):
@@ -194,8 +185,6 @@ class Window:
     def clear1(self):
         self.expression = ""
         self.display.set(self.expression)
-
-
 
     def input_num(self, x):
         # 数字按钮！更新！
@@ -226,6 +215,10 @@ class Calculator:
             ):
                 self.warning ="ExpressionError"
                 return False
+            #第一个字符是否为运算和.
+        if self.expression[0] in ("+","-","×","÷","."):
+            self.warning = "ExpressionError"
+            return False
         return True
     #报错
     def error(self):
@@ -267,6 +260,7 @@ class Calculator:
                 if i in ("+", "-", "×", "÷"):
                     self.warning = "ExpressionError"
                     return False
+
                 self.numbers.append(float(current))
                 current = ""
         return True
@@ -300,6 +294,7 @@ class Calculator:
                                 self.warning = "ZeroDivisionError"
                                 return False
                         break
+
             if not state:
                 for opera, a in enumerate(self.operators):
                     if a in ("+", "-"):
@@ -309,6 +304,7 @@ class Calculator:
                         elif self.operators[opera1] == "-":
                             result = self.numbers[opera1] - self.numbers[opera1 + 1]
                         break
+            #执行
             self.numbers[opera1] = result
             self.numbers.pop(opera1 + 1)
             self.operators.pop(opera1)
