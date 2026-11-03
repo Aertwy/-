@@ -136,6 +136,7 @@ class Window:
     def equals1(self):
         self.display.set(self.expression)
         self.expression = self.run()
+        self.expression = "{:g}".format(self.expression)
         self.expression =str(self.expression)
         self.display.set(self.expression)
     # 删除
