@@ -81,9 +81,7 @@ class Window:
                 bg=color["num_bg"],  # 按钮背景色
                 fg=color["num_fg"],  # 按钮字体色
                 activebackground=color["num_active"],
-                command=lambda x=i: self.input_num(x)
-            )
-
+                command=lambda x=i: self.input_num(x))
             operation.grid(row=index, column=3)
             self.operation.append(operation)
         # =================清空=======================

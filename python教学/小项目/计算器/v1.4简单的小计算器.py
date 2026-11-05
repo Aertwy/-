@@ -1,6 +1,5 @@
 import re
 import tkinter as tk
-
 class Window:
     def __init__(self):
         # ====================屏幕初始化==============================
@@ -142,7 +141,6 @@ class Window:
         self.warning = ""
         self.root.mainloop()#循环
 
-
 #==============================================================================================================================
     def run(self):
         if  self.calculator.parse(self.expression):
@@ -211,8 +209,7 @@ class Calculator:
         for i in range(len(self.expression)-1):
             if ( self.expression[i] in ("+", "-", "×", "÷")
                 and
-                    self.expression[i+1] in ("+", "-", "×", "÷")
-            ):
+                    self.expression[i+1] in ("+", "-", "×", "÷")):
                 self.warning ="ExpressionError"
                 return False
             #第一个字符是否为运算和.
