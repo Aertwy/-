@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="632bfd79-184e-4d59-9601-44482c983b22" name="更改" comment="init pro">
-      <change afterPath="$PROJECT_DIR$/python教学/小项目/井字棋/V0.1井字棋.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python教学/小项目/井字棋/草稿.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python教学/小项目/登录界面/Account book.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python教学/小项目/登录界面/V0.1登录界面.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python教学/小项目/登录界面/pigm.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/小项目/登录界面/V1.0登录界面.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/小项目/登录界面/book.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/小项目/登录界面/草稿.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python教学/小项目/井字棋.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python教学/小项目/计算器/v1.3简单的小计算器.py" beforeDir="false" afterPath="$PROJECT_DIR$/python教学/小项目/计算器/v1.3简单的小计算器.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python教学/小项目/计算器/v1.4简单的小计算器.py" beforeDir="false" afterPath="$PROJECT_DIR$/python教学/小项目/计算器/v1.4简单的小计算器.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python教学/小项目/登录界面/Account book.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python教学/小项目/登录界面/V0.1登录界面.py" beforeDir="false" afterPath="$PROJECT_DIR$/python教学/小项目/登录界面/V0.1登录界面.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,61 +51,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000000004752" />
-      <entry key="S2" value="1.0015991173839256" />
-      <entry key="S5" value="1.1436059762134825" />
-      <entry key="S10" value="1.6533827894224937" />
-      <entry key="S30" value="2.8126503568799617" />
-      <entry key="S60" value="3.4679508023126453" />
-      <entry key="M2" value="4.529511847436362" />
-      <entry key="M5" value="8.404999904698217" />
-      <entry key="M10" value="17.733647519622092" />
-      <entry key="M15" value="29.48629413728171" />
-      <entry key="M30" value="66.82205952036236" />
-      <entry key="H1" value="129.4510424440228" />
-      <entry key="H2" value="214.65283661383432" />
-      <entry key="H4" value="342.6543983599049" />
-      <entry key="D1" value="1616.2834355314671" />
-      <entry key="W1" value="7075.519803689263" />
+      <entry key="MS100" value="1.0000000001504497" />
+      <entry key="MS500" value="1.010851211998165" />
+      <entry key="S2" value="1.3227524607108416" />
+      <entry key="S5" value="1.6361346967855543" />
+      <entry key="S10" value="1.7996388174551097" />
+      <entry key="S30" value="2.2307969482064003" />
+      <entry key="S60" value="3.261038628647184" />
+      <entry key="M2" value="4.964120825944791" />
+      <entry key="M5" value="8.053925777915348" />
+      <entry key="M10" value="12.889682561302918" />
+      <entry key="M15" value="18.147367275876814" />
+      <entry key="M30" value="34.29985155950368" />
+      <entry key="H1" value="62.674788166463394" />
+      <entry key="H2" value="119.98893805496101" />
+      <entry key="H4" value="254.49134096007455" />
+      <entry key="D1" value="1574.7703882045755" />
+      <entry key="W1" value="7167.6795921461635" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.3700680867601089E-80" />
-      <entry key="MS500" value="1.0649971119716813E-16" />
-      <entry key="S2" value="1.0158675960834035E-4" />
-      <entry key="S5" value="0.025277542787044225" />
-      <entry key="S10" value="0.15901463816157962" />
-      <entry key="S30" value="0.5734661008353088" />
-      <entry key="S60" value="1.00412408299828" />
-      <entry key="M2" value="1.950105949553736" />
-      <entry key="M5" value="3.8987400091901927" />
-      <entry key="M10" value="5.559932932651552" />
-      <entry key="M15" value="7.048520151742036" />
-      <entry key="M30" value="12.202702159894615" />
-      <entry key="H1" value="22.753148237898962" />
-      <entry key="H2" value="38.668055621618855" />
-      <entry key="H4" value="61.62587241388426" />
-      <entry key="D1" value="253.9230715833609" />
-      <entry key="W1" value="948.3979454610424" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="3.884739917833541E-232" />
+      <entry key="S5" value="2.727374522663022E-93" />
+      <entry key="S10" value="5.222427139427627E-47" />
+      <entry key="S30" value="3.7378694575671607E-16" />
+      <entry key="S60" value="1.9333570434783E-8" />
+      <entry key="M2" value="1.3904521004178217E-4" />
+      <entry key="M5" value="0.02866168529246079" />
+      <entry key="M10" value="0.17314116546631805" />
+      <entry key="M15" value="0.3604158917283899" />
+      <entry key="M30" value="1.4759208592556445" />
+      <entry key="H1" value="5.102532272960914" />
+      <entry key="H2" value="14.143476972599705" />
+      <entry key="H4" value="36.21990083406772" />
+      <entry key="D1" value="239.1001030892966" />
+      <entry key="W1" value="958.8752927325265" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9330329915368074" />
-      <entry key="MS500" value="0.9862327044938274" />
-      <entry key="S2" value="0.9981937470516863" />
-      <entry key="S5" value="1.1625442907265644" />
-      <entry key="S10" value="1.7955521714566667" />
-      <entry key="S30" value="3.365618359295317" />
-      <entry key="S60" value="4.452174186600622" />
-      <entry key="M2" value="6.455836158766908" />
-      <entry key="M5" value="12.280502859759217" />
-      <entry key="M10" value="23.274979311132242" />
-      <entry key="M15" value="36.51776517488325" />
-      <entry key="M30" value="79.00777211846919" />
-      <entry key="H1" value="152.18712436718857" />
-      <entry key="H2" value="253.30607042805127" />
-      <entry key="H4" value="404.2683565659641" />
-      <entry key="D1" value="1870.197009867558" />
-      <entry key="W1" value="8023.911791340365" />
+      <entry key="MS100" value="0.9138314503585714" />
+      <entry key="MS500" value="0.9926648575826547" />
+      <entry key="S2" value="1.315805631620669" />
+      <entry key="S5" value="1.6323969787003345" />
+      <entry key="S10" value="1.7975104179118278" />
+      <entry key="S30" value="2.227996307099813" />
+      <entry key="S60" value="3.2556418559578795" />
+      <entry key="M2" value="4.958426694469305" />
+      <entry key="M5" value="8.078239304558025" />
+      <entry key="M10" value="13.058606888522055" />
+      <entry key="M15" value="18.503284775826625" />
+      <entry key="M30" value="35.77045183412411" />
+      <entry key="H1" value="67.77132767765886" />
+      <entry key="H2" value="134.1259259762052" />
+      <entry key="H4" value="290.703863464924" />
+      <entry key="D1" value="1813.8617354566002" />
+      <entry key="W1" value="8126.548931595693" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -126,78 +123,80 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.10.29.executor&quot;: &quot;Run&quot;,
-    &quot;Python.10.30.executor&quot;: &quot;Run&quot;,
-    &quot;Python.10.迭代器&amp;生成器.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2封装.executor&quot;: &quot;Run&quot;,
-    &quot;Python.3继承.executor&quot;: &quot;Run&quot;,
-    &quot;Python.4多态.executor&quot;: &quot;Run&quot;,
-    &quot;Python.5静态方法&amp;类方法.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.File operations.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6文件操作.executor&quot;: &quot;Run&quot;,
-    &quot;Python.7.正则表达式.executor&quot;: &quot;Run&quot;,
-    &quot;Python.8.闭包&amp;装饰器.executor&quot;: &quot;Run&quot;,
-    &quot;Python.9.魔术方法.executor&quot;: &quot;Run&quot;,
-    &quot;Python.9单例模式&amp;魔术方法.executor&quot;: &quot;Run&quot;,
-    &quot;Python.A.executor&quot;: &quot;Run&quot;,
-    &quot;Python.P1000 超级玛丽游戏.executor&quot;: &quot;Run&quot;,
-    &quot;Python.P1001 A+B Problem.executor&quot;: &quot;Run&quot;,
-    &quot;Python.P1008 [NOIP 1998 普及组] 三连击.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Tkinter使用大全.executor&quot;: &quot;Run&quot;,
-    &quot;Python.V0.1井字棋.executor&quot;: &quot;Run&quot;,
-    &quot;Python.V0.1小车运货.executor&quot;: &quot;Run&quot;,
-    &quot;Python.V0.1登录界面.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.patrol_robot.executor&quot;: &quot;Run&quot;,
-    &quot;Python.runpy.executor&quot;: &quot;Run&quot;,
-    &quot;Python.v1.1简单的小计算器.executor&quot;: &quot;Run&quot;,
-    &quot;Python.v1.3简单的小计算器.executor&quot;: &quot;Run&quot;,
-    &quot;Python.v1.4简单的小计算器.executor&quot;: &quot;Run&quot;,
-    &quot;Python.习题.executor&quot;: &quot;Run&quot;,
-    &quot;Python.井字棋.executor&quot;: &quot;Run&quot;,
-    &quot;Python.多态.executor&quot;: &quot;Run&quot;,
-    &quot;Python.封装.executor&quot;: &quot;Run&quot;,
-    &quot;Python.排序.executor&quot;: &quot;Run&quot;,
-    &quot;Python.查找.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.汉诺塔问题.executor&quot;: &quot;Run&quot;,
-    &quot;Python.目录.executor&quot;: &quot;Run&quot;,
-    &quot;Python.简单的小机器人控制.executor&quot;: &quot;Run&quot;,
-    &quot;Python.简单的小计算器.executor&quot;: &quot;Run&quot;,
-    &quot;Python.类和对象.executor&quot;: &quot;Run&quot;,
-    &quot;Python.练习.executor&quot;: &quot;Run&quot;,
-    &quot;Python.练习2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.练习3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.草稿.executor&quot;: &quot;Run&quot;,
-    &quot;Python.贪吃蛇.executor&quot;: &quot;Run&quot;,
-    &quot;Python.贪吃蛇2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.默写.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/python/程序/python教学/小项目&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;PyPlotsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.1.executor": "Run",
+    "Python.10.29.executor": "Run",
+    "Python.10.30.executor": "Run",
+    "Python.10.迭代器&生成器.executor": "Run",
+    "Python.2.executor": "Run",
+    "Python.2封装.executor": "Run",
+    "Python.3继承.executor": "Run",
+    "Python.4多态.executor": "Run",
+    "Python.5静态方法&类方法.executor": "Run",
+    "Python.6.File operations.executor": "Run",
+    "Python.6文件操作.executor": "Run",
+    "Python.7.正则表达式.executor": "Run",
+    "Python.8.闭包&装饰器.executor": "Run",
+    "Python.9.魔术方法.executor": "Run",
+    "Python.9单例模式&魔术方法.executor": "Run",
+    "Python.A.executor": "Run",
+    "Python.P1000 超级玛丽游戏.executor": "Run",
+    "Python.P1001 A+B Problem.executor": "Run",
+    "Python.P1008 [NOIP 1998 普及组] 三连击.executor": "Run",
+    "Python.Tkinter使用大全.executor": "Run",
+    "Python.V0.1井字棋.executor": "Run",
+    "Python.V0.1小车运货.executor": "Run",
+    "Python.V0.1登录界面.executor": "Run",
+    "Python.V1.0登录界面.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.patrol_robot.executor": "Run",
+    "Python.runpy.executor": "Run",
+    "Python.v1.1简单的小计算器.executor": "Run",
+    "Python.v1.3简单的小计算器.executor": "Run",
+    "Python.v1.4简单的小计算器.executor": "Run",
+    "Python.习题.executor": "Run",
+    "Python.井字棋.executor": "Run",
+    "Python.多态.executor": "Run",
+    "Python.封装.executor": "Run",
+    "Python.排序.executor": "Run",
+    "Python.查找.executor": "Debug",
+    "Python.汉诺塔问题.executor": "Run",
+    "Python.目录.executor": "Run",
+    "Python.简单的小机器人控制.executor": "Run",
+    "Python.简单的小计算器.executor": "Run",
+    "Python.类和对象.executor": "Run",
+    "Python.练习.executor": "Run",
+    "Python.练习2.executor": "Run",
+    "Python.练习3.executor": "Run",
+    "Python.草稿.executor": "Run",
+    "Python.贪吃蛇.executor": "Run",
+    "Python.贪吃蛇2.executor": "Run",
+    "Python.默写.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "E:/python/程序/python教学/小项目/登录界面",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "PyPlotsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\python\程序\python教学\小项目\登录界面" />
       <recent name="E:\python\程序\python教学\小项目" />
       <recent name="E:\python\程序\python教学" />
       <recent name="E:\python\程序\python教学\数据结构与算法\计算器" />
@@ -352,7 +351,7 @@
       <workItem from="1793681415695" duration="830000" />
       <workItem from="1793682273619" duration="18909000" />
       <workItem from="1793750717702" duration="30311000" />
-      <workItem from="1793848273114" duration="5540000" />
+      <workItem from="1793848273114" duration="20516000" />
     </task>
     <task id="LOCAL-00001" summary="init pro">
       <option name="closed" value="true" />
@@ -410,7 +409,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793716722360</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="init pro">
+      <option name="closed" value="true" />
+      <created>1793853990412</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1793853990412</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,13 +468,14 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/$4.coverage" NAME="4多态 覆盖结果" MODIFIED="1792318610008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$V1_0.coverage" NAME="V1.0登录界面 覆盖结果" MODIFIED="1793881761180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/登录界面" />
     <SUITE FILE_PATH="coverage/$1.coverage" NAME="1 覆盖结果" MODIFIED="1793597385752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
     <SUITE FILE_PATH="coverage/$v1_3.coverage" NAME="v1.3简单的小计算器 覆盖结果" MODIFIED="1793793071884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/计算器" />
-    <SUITE FILE_PATH="coverage/$.coverage" NAME="井字棋 覆盖结果" MODIFIED="1793785566998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目" />
     <SUITE FILE_PATH="coverage/$P1001_A_B_Problem.coverage" NAME="P1001 A+B Problem 覆盖结果" MODIFIED="1792743148165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/曼谷题目" />
+    <SUITE FILE_PATH="coverage/$.coverage" NAME="草稿 覆盖结果" MODIFIED="1793856743837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/登录界面" />
     <SUITE FILE_PATH="coverage/$patrol_robot.coverage" NAME="patrol_robot 覆盖结果" MODIFIED="1793340799442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/pipopa" />
     <SUITE FILE_PATH="coverage/$v1_1.coverage" NAME="v1.1简单的小计算器 覆盖结果" MODIFIED="1793609966896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/数据结构与算法/计算器" />
-    <SUITE FILE_PATH="coverage/$Tkinter.coverage" NAME="Tkinter使用大全 覆盖结果" MODIFIED="1793711860851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目" />
+    <SUITE FILE_PATH="coverage/$Tkinter.coverage" NAME="Tkinter使用大全 覆盖结果" MODIFIED="1793879391021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目" />
     <SUITE FILE_PATH="coverage/$2.coverage" NAME="2 覆盖结果" MODIFIED="1793592077821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
     <SUITE FILE_PATH="coverage/$P1008__NOIP_1998___.coverage" NAME="P1008 [NOIP 1998 普及组] 三连击 覆盖结果" MODIFIED="1792423112675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/曼谷题目" />
     <SUITE FILE_PATH="coverage/$8__.coverage" NAME="8.闭包&amp;装饰器 覆盖结果" MODIFIED="1792647703273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
@@ -476,12 +484,12 @@
     <SUITE FILE_PATH="coverage/$P1000_.coverage" NAME="P1000 超级玛丽游戏 覆盖结果" MODIFIED="1792743227205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/曼谷题目" />
     <SUITE FILE_PATH="coverage/$main.coverage" NAME="练习 覆盖结果" MODIFIED="1791941947296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$9_.coverage" NAME="9.魔术方法 覆盖结果" MODIFIED="1792403810586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$v1_4.coverage" NAME="v1.4简单的小计算器 覆盖结果" MODIFIED="1793793203478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/计算器" />
+    <SUITE FILE_PATH="coverage/$v1_4.coverage" NAME="v1.4简单的小计算器 覆盖结果" MODIFIED="1793877574510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/计算器" />
     <SUITE FILE_PATH="coverage/$7_.coverage" NAME="7.正则表达式 覆盖结果" MODIFIED="1792385030962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$10__.coverage" NAME="10.迭代器&amp;生成器 覆盖结果" MODIFIED="1792499227451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
     <SUITE FILE_PATH="coverage/$5_.coverage" NAME="5静态方法&amp;类方法 覆盖结果" MODIFIED="1792329550314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$3.coverage" NAME="3继承 覆盖结果" MODIFIED="1792286641541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$V0_1.coverage" NAME="V0.1登录界面 覆盖结果" MODIFIED="1793853786363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/登录界面" />
+    <SUITE FILE_PATH="coverage/$V0_1.coverage" NAME="V0.1登录界面 覆盖结果" MODIFIED="1793876540020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/登录界面" />
     <SUITE FILE_PATH="coverage/$A.coverage" NAME="A 覆盖结果" MODIFIED="1793344712125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
     <SUITE FILE_PATH="coverage/$10_29.coverage" NAME="10.29 覆盖结果" MODIFIED="1793244809126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot" />
     <SUITE FILE_PATH="coverage/$6.coverage" NAME="6文件操作 覆盖结果" MODIFIED="1792331418333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/文件操作" />
