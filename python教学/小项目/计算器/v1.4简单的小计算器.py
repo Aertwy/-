@@ -219,7 +219,6 @@ class Calculator:
         return True
     #报错
     def error(self):
-
         if self.warning == "ZeroDivisionError":
             return "除数为0"
         elif self.warning == "IllegalInputErrors":

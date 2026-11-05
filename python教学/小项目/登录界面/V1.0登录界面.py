@@ -1,18 +1,15 @@
 
 import tkinter as tk
-import tkinter.font as tkfont          # 字体模块（第 09 章）
-from tkinter import ttk                # ttk 控件（更现代外观的一部分控件）
-from tkinter import messagebox         # 弹窗：提示/警告/错误/确认
-from tkinter import simpledialog       # 弹窗：输入框
-from tkinter import filedialog         # 弹窗：打开/保存文件
-from tkinter import colorchooser       # 弹窗：取色器
 import re
-import os
 
 class Window:
     def __init__(self):
         # ====================屏幕初始化==============================
-        self.expression = ""
+        self._password=None
+        self._account=None
+        self.si_login =None
+        self.account = ""
+        self.password = ""
         self.root = tk.Tk()
         self.root.title("登录界面(～￣▽￣)～")
         self.root.geometry("700x500")
@@ -22,8 +19,6 @@ class Window:
         #self.root.iconbitmap('pigm.ico')
         # 颜色
         self.root.config(bg="#39C5BB")
-        for i in range(4):
-            self.root.columnconfigure(i, weight=1, uniform="key")
         #=============================中间
         self.root.update_idletasks()  # 先让 Tk 算出窗口真实大小
         w, h = self.root.winfo_width(), self.root.winfo_height()
@@ -31,7 +26,7 @@ class Window:
         y = (self.root.winfo_screenheight() - h) // 2
         self.root.geometry(f"+{x}+{y}")
         #=======色卡======================
-        miku={
+        self.miku={
             "bg": "#39C5BB", "surface": "#EAFBF7",
             "primary": "#1F8C85","primary_active": "#176F6A",
             "text": "#0F4C49", "accent": "#FF7043",
@@ -40,32 +35,35 @@ class Window:
         lab = tk.Label(self.root,
                        text="登录系统V1.0",
                        font=("微软雅黑", 25),
-                       bg = miku["bg"],
-                       fg=miku["text"])
+                       bg = self.miku["bg"],
+                       fg=self.miku["text"])
         lab.pack()
         #账号
-        self.account = tk.StringVar(self.root)
+        self.__account = tk.StringVar(self.root)
         # 文本框！创建！
-        self.in_account = tk.Entry(self.root, textvariable=self.account,font=("微软雅黑", 17),justify="right",bg="#123F3C",fg="#BFF5EF")
+        self.in_account = tk.Entry(self.root, textvariable=self.__account,font=("微软雅黑", 17),justify="left",bg="#123F3C",fg="#BFF5EF")
         self.in_account.place(x = 250,y=180,width =200,height=30)
         lab1 = tk.Label(self.root,
                        text="账号:",
                        font=("微软雅黑", 17),
-                       bg = miku["bg"],
-                       fg=miku["text"])
+                       bg = self.miku["bg"],
+                       fg=self.miku["text"])
         lab1.place(x=190,y=175)
         #=======================================
         # 密码
-        self.password = tk.StringVar(self.root)
+        self.__password = tk.StringVar(self.root)
         # 文本框！创建！
-        self.in_password = tk.Entry(self.root, textvariable=self.password,font=("微软雅黑", 17),justify="right",bg="#123F3C",fg="#BFF5EF")
-        self.in_password.place(x = 250,y=230,width =200,height=30)
+        self.in_password = tk.Entry(self.root,show="*",
+                                    textvariable=self.__password,
+                                    font=("微软雅黑", 17),
+                                    justify="left",bg="#123F3C",fg="#BFF5EF",)
+        self.in_password.place(x = 250,y=235,width =200,height=30)
         lab1 = tk.Label(self.root,
                        text="密码:",
                        font=("微软雅黑", 17),
-                       bg = miku["bg"],
-                       fg=miku["text"])
-        lab1.place(x=190,y=225)
+                       bg = self.miku["bg"],
+                       fg=self.miku["text"])
+        lab1.place(x=190,y=235)
         #==================================================
         #登录
         self.in_login = tk.Button(
@@ -74,9 +72,9 @@ class Window:
             font=("微软雅黑", 20, "bold"),  # 字体
             bg="#FFFFFF",  # 按钮背景色
             fg="#0F4C49",  # 按钮字体色
-            activebackground="#D9F3EE")  # 背景
-            #command=lambda:pass  # 按下执行
-        self.in_login.place(x=220, y=270, width=100, height=40)
+            activebackground="#D9F3EE", # 背景
+            command=lambda:self.denlu())  # 按下执行
+        self.in_login.place(x=220, y=277, width=100, height=40)
         # ==================================================
         #注册
         self.in_register = tk.Button(
@@ -85,23 +83,101 @@ class Window:
             font=("微软雅黑", 20, "bold"),  # 字体
             bg="#FFFFFF",  # 按钮背景色
             fg="#0F4C49",  # 按钮字体色
-            activebackground="#D9F3EE")  # 背景
-            #command=lambda:pass  # 按下执行
-        self.in_register.place(x=370, y=270, width=100, height=40)
-
-
-
-
-
-
-
-
-
-
-
+            activebackground="#D9F3EE",  # 背景
+            command=lambda:self.enrolled())# 按下执行
+        self.in_register.place(x=370, y=277, width=100, height=40)
+        self.l = Login()
+        #====================================================
+        #主页面报错信息
+        self.error_text = tk.StringVar(self.root,value="")
+        self.error = tk.Label(self.root,
+                              textvariable=self.error_text,
+                              fg='red',
+                              bg='#39c5bb',
+                              justify="left")
+        self.error.place(x=250, y=210)
         self.root.mainloop()  # 循环
+    #登录
+    def denlu(self):
+        self.account =self.__account.get()
+        self.password =self.__password.get()
+        if self.l.login(self.account,self.password):
+            self.error_text.set("登录成功")
+        else:
+            error= self.l.error()
+            self.error_text.set(str(error))
+    #注册
+    def enrolled(self):
+    #=============子窗口==============================
+        enr = tk.Toplevel(self.root)
+        enr.title("注册账号")
+        enr.geometry("300x300")
+        # 设定是否能够改变窗口的宽和高尺寸
+        enr.resizable(False, False)
+        # 颜色
+        enr.config(bg="#39C5BB")
 
+        enr.update_idletasks()  # 先让 Tk 算出窗口真实大小
+        w, h = enr.winfo_width(), enr.winfo_height()
+        x = (enr.winfo_screenwidth() - w) // 2  # 屏幕宽 - 窗口宽 再对半分
+        y = (enr.winfo_screenheight() - h) // 2
+        enr.geometry(f"+{x}+{y}")
+        #标题
+        lab = tk.Label(enr,
+                   text="注册",
+                   font=("微软雅黑", 10),
+                   bg=self.miku["bg"],
+                   fg=self.miku["text"])
+        lab.pack()
+#=================================================
+        # 账号
+        self._account = tk.StringVar(enr)
+        # 文本框！创建！
+        si_account = tk.Entry(enr,textvariable=self._account, font=("微软雅黑", 10), justify="left",
+                                   bg="#123F3C", fg="#BFF5EF")
+        si_account.place(x=70, y=100, width=150, height=30)
+        lab1 = tk.Label(enr,
+                        text="账号:",
+                        font=("微软雅黑", 10),
+                        bg=self.miku["bg"],
+                        fg=self.miku["text"])
+        lab1.place(x=30, y=100)
+        # =======================================
+        # 密码
+        self._password = tk.StringVar(enr)
+        # 文本框！创建！
+        si_password = tk.Entry(enr, show="*",
+                                    textvariable=self._password,
+                                    font=("微软雅黑", 10),
+                                    justify="left", bg="#123F3C", fg="#BFF5EF", )
+        si_password.place(x=70, y=150, width=150, height=30)
+        lab1 = tk.Label(enr,
+                        text="密码:",
+                        font=("微软雅黑", 10),
+                        bg=self.miku["bg"],
+                        fg=self.miku["text"])
+        lab1.place(x=30, y=150)
 
+        # 登录
+        self.si_login = tk.Button(
+            enr,
+            text="确认",  # 字
+            font=("微软雅黑", 10, "bold"),  # 字体
+            bg="#FFFFFF",  # 按钮背景色
+            fg="#0F4C49",  # 按钮字体色
+            activebackground="#D9F3EE",  # 背景
+            command=lambda: self.in_enrolled())  # 按下执行
+        self.si_login.place(x=70, y=200, width=150, height=30)
+        # ==================================================
+    #========================================================
+    def in_enrolled(self):
+        account =self._account.get()
+        password =self._password.get()
+        if self.l.register(account, password):
+            print("注册成功")
+        else:
+            error= self.l.error()
+            print(error)
 
 class Login:
     def __init__(self):
@@ -110,32 +186,18 @@ class Login:
         self.mistake = ""
         self.lo_status = False#登录状态
         self.re_status=False#注册状态
-    def infor(self):#界面
-        print("=" * 30)
-        print("\t登录系统V1.0")
-        print("1.登录\n2.注册\n")
-        print("=" * 30)
 # ------------------------------------------注册--------------------------------------------------------------
 # ==============================================================================================================
-    def login(self):#登录
-        os.system("cls")
-        print("=" * 30)
-        print("\t登录")
-        lo_account = input("请输入账号")
-        lo_password = input("请输入密码")
+    def login(self,account,password):#登录
+        lo_account = account
+        lo_password = password
         if not self.generality(lo_account,lo_password):
-            print(self.error())
-            input("按任意键退出")
             return False
         else:
             if not self.login_error(lo_account, lo_password):
-                print(self.error())
-                input("按任意键退出")
                 return False
-            else:
-                print("登录成功")
-        input("按任意键退出")
         return True
+
     def login_error(self,lo_account, lo_password):#登录错误判断
         with open("book.txt", "r") as f:
             lines = f.readlines()
@@ -175,41 +237,25 @@ class Login:
 #--------------------------------------------注册--------------------------------------------------------------
 #=============================================================================================================
     # 注册
-    def register(self):
-        os.system("cls")
-        print("=" * 30)
-        print("\t注册")
-        print("账号:1-10以内字符")
-        print("密码:7到15以内字符，包含字母大小写，!@#$%^&*-+=|:;'<>,.?中的一种特殊字符")
-        print("=" * 30)
-        re_account = input("账号:")
-        re_password = input("密码:")
-        password = input("确认密码输入")
+    def register(self,account,password):
+        re_account = account
+        re_password = password
         if not self.generality(re_account,re_password):
-            print(self.error())
-            input("按任意键退出")
             return False
         else:
-            if not self.register_error(password, re_account, re_password):
-                print(self.error())
-                input("按任意键退出")
+            if not self.register_error(re_account):
                 return False
             else:
                 with open("book.txt", "a") as f:
                     f.write(f"{re_account},{re_password},\n")
-                    print("注册成功")
-                    input("按任意键退出")
                     return True
+
     #注册错误判断
-    def register_error(self,password,re_account,re_password):# 临时变量
+    def register_error(self,re_account):# 临时变量
         words = ""
         # 账号格式错误
         if not len(re_account) <= 10:
             self.mistake = "AccountFormatError"
-            return False
-        # 判断是否重复密码错误
-        if not password == re_password:
-            self.mistake = " ConfirmPasswordError"
             return False
         with open("book.txt","r") as f:
             lines = f.readlines()
@@ -220,28 +266,13 @@ class Login:
                     self.mistake = "AccountDuplicationError"
                     return False
             return True
-#============================================结束=================================================================================================================
-    #运行
-    def run(self):
-        while True:
-            self.infor()
-            ordinal = input("输入序号:")
-            if ordinal == "1":
-                self.login()
-            #注册页面
-            elif ordinal == "2":
-                self.register()
-            self.mistake = "InputError"
-            os.system("cls")
-            continue
+#============================================结束=======================================================
     #错误
     def error(self):
         if self.mistake=="InputError":
             return "输入错误"
         elif self.mistake=="AccountDuplicationError":
             return "账号重复"
-        elif self.mistake==" ConfirmPasswordError":
-            return "确认密码错误"
         elif self.mistake=="IncorrectAccountPassword":
             return "账号或密码错误"
         elif self.mistake=="EmptyAccountError":
@@ -255,9 +286,6 @@ class Login:
         return True
 if __name__ == "__main__":
     n = Window()
-
-
-
 
 
 
