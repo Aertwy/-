@@ -1,102 +1,64 @@
-
+#修改注册，显示报错和退出功能就没了
 import tkinter as tk
 import re
-
+import  ui_common as ui
 class Window:
     def __init__(self):
-        # ====================屏幕初始化==============================
         self._password=None
         self._account=None
         self.si_login =None
         self.account = ""
         self.password = ""
-        self.root = tk.Tk()
-        self.root.title("登录界面(～￣▽￣)～")
-        self.root.geometry("700x500")
-        # 设定是否能够改变窗口的宽和高尺寸
-        self.root.resizable(False, False)
-        # 窗口图标
-        #self.root.iconbitmap('pigm.ico')
-        # 颜色
-        self.root.config(bg="#39C5BB")
-        #=============================中间
-        self.root.update_idletasks()  # 先让 Tk 算出窗口真实大小
-        w, h = self.root.winfo_width(), self.root.winfo_height()
-        x = (self.root.winfo_screenwidth() - w) // 2  # 屏幕宽 - 窗口宽 再对半分
-        y = (self.root.winfo_screenheight() - h) // 2
-        self.root.geometry(f"+{x}+{y}")
-        #=======色卡======================
-        self.miku={
-            "bg": "#39C5BB", "surface": "#EAFBF7",
-            "primary": "#1F8C85","primary_active": "#176F6A",
-            "text": "#0F4C49", "accent": "#FF7043",
-            "success": "#2E9E96","danger": "#E8505B"}
-        #====标题===========================
-        lab = tk.Label(self.root,
-                       text="登录系统V1.0",
-                       font=("微软雅黑", 25),
-                       bg = self.miku["bg"],
-                       fg=self.miku["text"])
-        lab.pack()
+        self.register_window = None
+        self.si_account = None
+        self.si_password= None
+        self.in_error_text= None
+        self.in_error= None
+        # ====================屏幕初始化==============================
+        self.root = ui.create_window("登录界面(～￣▽￣)～", size=(700, 500))
+        result1 = ui.label(self.root, "登录系统V1.0",x=280, y=5,font=("微软雅黑", 17))
+        self.root.iconbitmap('pigm.ico')
+        #==============================================================================
         #账号
         self.__account = tk.StringVar(self.root)
-        # 文本框！创建！
-        self.in_account = tk.Entry(self.root, textvariable=self.__account,font=("微软雅黑", 17),justify="left",bg="#123F3C",fg="#BFF5EF")
-        self.in_account.place(x = 250,y=180,width =200,height=30)
-        lab1 = tk.Label(self.root,
-                       text="账号:",
-                       font=("微软雅黑", 17),
-                       bg = self.miku["bg"],
-                       fg=self.miku["text"])
-        lab1.place(x=190,y=175)
+        self.in_account = ui.labeled_entry(self.root,
+                                           textvariable=self.__account,
+                                           x=170, y=180, width=280, height=30,
+                                           text="账号:",
+                                           label_font=("微软雅黑", 17))
         #=======================================
         # 密码
         self.__password = tk.StringVar(self.root)
-        # 文本框！创建！
-        self.in_password = tk.Entry(self.root,show="*",
-                                    textvariable=self.__password,
-                                    font=("微软雅黑", 17),
-                                    justify="left",bg="#123F3C",fg="#BFF5EF",)
-        self.in_password.place(x = 250,y=235,width =200,height=30)
-        lab1 = tk.Label(self.root,
-                       text="密码:",
-                       font=("微软雅黑", 17),
-                       bg = self.miku["bg"],
-                       fg=self.miku["text"])
-        lab1.place(x=190,y=235)
+        self.in_password = ui.labeled_entry(self.root,
+                                           textvariable=self.__password,
+                                           x=170, y=235, width=280, height=30,
+                                           text="密码:",
+                                           label_font=("微软雅黑", 17))
         #==================================================
         #登录
-        self.in_login = tk.Button(
-            self.root,
-            text="登录",  # 字
-            font=("微软雅黑", 20, "bold"),  # 字体
-            bg="#FFFFFF",  # 按钮背景色
-            fg="#0F4C49",  # 按钮字体色
-            activebackground="#D9F3EE", # 背景
-            command=lambda:self.denlu())  # 按下执行
-        self.in_login.place(x=220, y=277, width=100, height=40)
+        self.in_login = ui.button(self.root, "登录",
+                                  command=self.denlu,
+                                  x=220, y=277,
+                                  width=100, height=40,
+                                  font=("微软雅黑", 20, "bold"))
         # ==================================================
         #注册
-        self.in_register = tk.Button(
-            self.root,
-            text="注册",  # 字
-            font=("微软雅黑", 20, "bold"),  # 字体
-            bg="#FFFFFF",  # 按钮背景色
-            fg="#0F4C49",  # 按钮字体色
-            activebackground="#D9F3EE",  # 背景
-            command=lambda:self.enrolled())# 按下执行
-        self.in_register.place(x=370, y=277, width=100, height=40)
-        self.l = Login()
+        self.in_register = ui.button(self.root, "注册",
+                                  command=self.enrolled,
+                                  x=370, y=277,
+                                  width=100, height=40,
+                                  font=("微软雅黑", 20, "bold"))
         #====================================================
         #主页面报错信息
         self.error_text = tk.StringVar(self.root,value="")
-        self.error = tk.Label(self.root,
-                              textvariable=self.error_text,
-                              fg='red',
-                              bg='#39c5bb',
-                              justify="left")
-        self.error.place(x=250, y=210)
+        self.error = ui.label(self.root,textvariable=self.error_text,
+                          text= "", x=250, y=210,
+                          justify="left",
+                          fg='red',bg='#39c5bb')
+
+        self.l =Login()
         self.root.mainloop()  # 循环
+
     #登录
     def denlu(self):
         self.account =self.__account.get()
@@ -108,76 +70,55 @@ class Window:
             self.error_text.set(str(error))
     #注册
     def enrolled(self):
-    #=============子窗口==============================
-        enr = tk.Toplevel(self.root)
-        enr.title("注册账号")
-        enr.geometry("300x300")
-        # 设定是否能够改变窗口的宽和高尺寸
-        enr.resizable(False, False)
-        # 颜色
-        enr.config(bg="#39C5BB")
-
-        enr.update_idletasks()  # 先让 Tk 算出窗口真实大小
-        w, h = enr.winfo_width(), enr.winfo_height()
-        x = (enr.winfo_screenwidth() - w) // 2  # 屏幕宽 - 窗口宽 再对半分
-        y = (enr.winfo_screenheight() - h) // 2
-        enr.geometry(f"+{x}+{y}")
+#=============子窗口=========================================
+        self.register_window = ui.create_window(
+            "注册账号",
+            size=(300, 300),
+            parent=self.root)
+        self.register_window.iconbitmap('pigm.ico')
         #标题
-        lab = tk.Label(enr,
-                   text="注册",
-                   font=("微软雅黑", 10),
-                   bg=self.miku["bg"],
-                   fg=self.miku["text"])
-        lab.pack()
-#=================================================
+        result1 = ui.label(self.register_window, "注册", x=130, y=0,font=("微软雅黑", 10, "bold"))
+        #=================================================
         # 账号
-        self._account = tk.StringVar(enr)
-        # 文本框！创建！
-        si_account = tk.Entry(enr,textvariable=self._account, font=("微软雅黑", 10), justify="left",
-                                   bg="#123F3C", fg="#BFF5EF")
-        si_account.place(x=70, y=100, width=150, height=30)
-        lab1 = tk.Label(enr,
-                        text="账号:",
-                        font=("微软雅黑", 10),
-                        bg=self.miku["bg"],
-                        fg=self.miku["text"])
-        lab1.place(x=30, y=100)
+        self._account = tk.StringVar(self.register_window)
+        self.si_account = ui.labeled_entry(self.register_window,
+                                           textvariable=self._account,
+                                           x=30, y=100, width=200, height=30,
+                                           text="账号:",
+                                           label_font=("微软雅黑", 10))
         # =======================================
+        #注册页面报错信息
+        self.in_error_text = tk.StringVar(self.register_window,value="")
+        self.in_error = ui.label(self.register_window,
+                                 textvariable=self.in_error_text,
+                                 text= "", x=60, y=76,
+                                 justify="left",
+                                 fg='red',bg='#39c5bb')
+        #=========================================
         # 密码
-        self._password = tk.StringVar(enr)
-        # 文本框！创建！
-        si_password = tk.Entry(enr, show="*",
-                                    textvariable=self._password,
-                                    font=("微软雅黑", 10),
-                                    justify="left", bg="#123F3C", fg="#BFF5EF", )
-        si_password.place(x=70, y=150, width=150, height=30)
-        lab1 = tk.Label(enr,
-                        text="密码:",
-                        font=("微软雅黑", 10),
-                        bg=self.miku["bg"],
-                        fg=self.miku["text"])
-        lab1.place(x=30, y=150)
-
-        # 登录
-        self.si_login = tk.Button(
-            enr,
-            text="确认",  # 字
-            font=("微软雅黑", 10, "bold"),  # 字体
-            bg="#FFFFFF",  # 按钮背景色
-            fg="#0F4C49",  # 按钮字体色
-            activebackground="#D9F3EE",  # 背景
-            command=lambda: self.in_enrolled())  # 按下执行
-        self.si_login.place(x=70, y=200, width=150, height=30)
-        # ==================================================
+        self._password = tk.StringVar(self.register_window)
+        self.si_password  = ui.labeled_entry(self.register_window,
+                                      textvariable=self._password,
+                                      x=30, y=140, width=200, height=30,
+                                      text="密码:",show="*",
+                                      label_font=("微软雅黑", 10))
+        # =======================================
+        # 确认
+        self.si_login = ui.button(self.register_window, "确认",
+                                     command=self.in_enrolled,
+                                     x=70, y=200,
+                                     width=120, height=30,
+                                     font=("微软雅黑", 10, "bold"))
     #========================================================
     def in_enrolled(self):
         account =self._account.get()
         password =self._password.get()
         if self.l.register(account, password):
-            print("注册成功")
+            self.in_error_text.set("======注册成功，3喵后退出======")
+            self.register_window.after(3000, self.register_window.destroy)
         else:
             error= self.l.error()
-            print(error)
+            self.in_error_text.set(str(error))
 
 class Login:
     def __init__(self):
