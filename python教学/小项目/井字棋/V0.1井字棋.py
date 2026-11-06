@@ -1,7 +1,6 @@
 import re
 import tkinter as tk
 import os
-
 class Window:
     def __init__(self):
         # ====================屏幕初始化==============================
@@ -15,8 +14,6 @@ class Window:
         for i in range(4):
             self.root.columnconfigure(i, weight=1, uniform="key")
         self.root.mainloop()
-
-
 class Main:
     def __init__(self):
         self.first="先手"#状态

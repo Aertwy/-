@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="632bfd79-184e-4d59-9601-44482c983b22" name="更改" comment="init pro">
-      <change afterPath="$PROJECT_DIR$/python教学/小项目/ui_common.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python教学/小项目/登录界面/ui_common.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python教学/小项目/草稿.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/小项目/打字速度测试/V0.1打字速度测试.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/小项目/猜数字/V0.1猜数字.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/小项目/登录界面/最终版/V1.0登录界面.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/小项目/登录界面/最终版/book.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/小项目/登录界面/最终版/pigm.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/小项目/登录界面/最终版/ui_common.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python教学/小项目/井字棋/V0.1井字棋.py" beforeDir="false" afterPath="$PROJECT_DIR$/python教学/小项目/井字棋/V0.1井字棋.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python教学/小项目/登录界面/V1.0登录界面.py" beforeDir="false" afterPath="$PROJECT_DIR$/python教学/小项目/登录界面/V1.0登录界面.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python教学/小项目/登录界面/book.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python教学/小项目/登录界面/book.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python教学/小项目/登录界面/ui_common.py" beforeDir="false" afterPath="$PROJECT_DIR$/python教学/小项目/登录界面/ui_common.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,61 +56,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000003954503793" />
-      <entry key="MS500" value="1.053884546299442" />
-      <entry key="S2" value="1.838898089835977" />
-      <entry key="S5" value="3.2705727672874843" />
-      <entry key="S10" value="4.552247773242656" />
-      <entry key="S30" value="5.9971326772401286" />
-      <entry key="S60" value="6.5692928658950995" />
-      <entry key="M2" value="7.3841316350023165" />
-      <entry key="M5" value="9.244092534969315" />
-      <entry key="M10" value="10.670579614821936" />
-      <entry key="M15" value="11.324093906590237" />
-      <entry key="M30" value="12.284064142362105" />
-      <entry key="H1" value="14.527065365849062" />
-      <entry key="H2" value="20.766069355492185" />
-      <entry key="H4" value="52.889388662135765" />
-      <entry key="D1" value="1124.9947844496098" />
-      <entry key="W1" value="6888.733458946614" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000255202148411" />
+      <entry key="S5" value="1.0145465792290442" />
+      <entry key="S10" value="1.12166447878244" />
+      <entry key="S30" value="1.8006222169372577" />
+      <entry key="S60" value="3.145571511118481" />
+      <entry key="M2" value="5.658211247818621" />
+      <entry key="M5" value="10.612846733713981" />
+      <entry key="M10" value="15.581454518973315" />
+      <entry key="M15" value="21.242339693663368" />
+      <entry key="M30" value="39.348556116806115" />
+      <entry key="H1" value="63.62208318928133" />
+      <entry key="H2" value="87.83962705241025" />
+      <entry key="H4" value="122.67743482724853" />
+      <entry key="D1" value="1116.5740982010357" />
+      <entry key="W1" value="6892.502434737599" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="2.383450834225891E-111" />
-      <entry key="S60" value="4.882063281047776E-56" />
-      <entry key="M2" value="2.2115464424727805E-28" />
-      <entry key="M5" value="9.378912607164494E-12" />
-      <entry key="M10" value="4.213645278978101E-6" />
-      <entry key="M15" value="3.670624085510831E-4" />
-      <entry key="M30" value="0.035776236883657074" />
-      <entry key="H1" value="0.37285028783533" />
-      <entry key="H2" value="1.4710251799648248" />
-      <entry key="H4" value="7.061322644695576" />
-      <entry key="D1" value="176.27313769583031" />
-      <entry key="W1" value="933.4488935093439" />
+      <entry key="MS500" value="3.4687036544753703E-217" />
+      <entry key="S2" value="7.674353490297579E-55" />
+      <entry key="S5" value="2.2595227740432923E-22" />
+      <entry key="S10" value="1.5033002546086307E-11" />
+      <entry key="S30" value="2.576906781298772E-4" />
+      <entry key="S60" value="0.019010586683727987" />
+      <entry key="M2" value="0.18279177260225768" />
+      <entry key="M5" value="0.7623862113069878" />
+      <entry key="M10" value="1.589381626000962" />
+      <entry key="M15" value="2.7887661267619386" />
+      <entry key="M30" value="6.730927630979315" />
+      <entry key="H1" value="11.636067038788735" />
+      <entry key="H2" value="15.933336887794718" />
+      <entry key="H4" value="21.706451158989758" />
+      <entry key="D1" value="178.47977212322365" />
+      <entry key="W1" value="939.8983116243771" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8645375373004475" />
-      <entry key="MS500" value="1.0225323396786115" />
-      <entry key="S2" value="1.8230793429974639" />
-      <entry key="S5" value="3.259719256339588" />
-      <entry key="S10" value="4.544941368832018" />
-      <entry key="S30" value="5.993998746042586" />
-      <entry key="S60" value="6.5672396256406955" />
-      <entry key="M2" value="7.381243892662867" />
-      <entry key="M5" value="9.2402091717465" />
-      <entry key="M10" value="10.667490159727157" />
-      <entry key="M15" value="11.322040091388029" />
-      <entry key="M30" value="12.318361812462955" />
-      <entry key="H1" value="14.898846881226266" />
-      <entry key="H2" value="22.236081048494757" />
-      <entry key="H4" value="59.948971260452396" />
-      <entry key="D1" value="1301.2613671421605" />
-      <entry key="W1" value="7822.176573499356" />
+      <entry key="MS100" value="0.9395227492140118" />
+      <entry key="MS500" value="0.9876008614453725" />
+      <entry key="S2" value="0.9969111203294757" />
+      <entry key="S5" value="1.0132775249193322" />
+      <entry key="S10" value="1.1209441121667751" />
+      <entry key="S30" value="1.8000254603573684" />
+      <entry key="S60" value="3.162399221013655" />
+      <entry key="M2" value="5.836038001964375" />
+      <entry key="M5" value="11.367881675280683" />
+      <entry key="M10" value="17.162958791247842" />
+      <entry key="M15" value="24.021718949998586" />
+      <entry key="M30" value="46.06786276933779" />
+      <entry key="H1" value="75.24787673058664" />
+      <entry key="H2" value="103.76578775874829" />
+      <entry key="H4" value="144.37894746442424" />
+      <entry key="D1" value="1295.0472265490375" />
+      <entry key="W1" value="7832.394944752578" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -148,6 +153,7 @@
     "Python.Tkinter使用大全.executor": "Run",
     "Python.V0.1井字棋.executor": "Run",
     "Python.V0.1小车运货.executor": "Run",
+    "Python.V0.1猜数字.executor": "Run",
     "Python.V0.1登录界面.executor": "Run",
     "Python.V1.0登录界面.executor": "Run",
     "Python.main.executor": "Run",
@@ -182,7 +188,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "E:/python/程序/python教学/小项目/登录界面",
+    "last_opened_file_path": "E:/python/程序/python教学/小项目/登录界面/最终版",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
@@ -191,23 +197,23 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "settings.editor.selected.configurable": "PyPlotsConfigurable",
+    "settings.editor.selected.configurable": "MTTitleBarConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\python\程序\python教学\小项目\登录界面\最终版" />
       <recent name="E:\python\程序\python教学\小项目\登录界面" />
       <recent name="E:\python\程序\python教学\小项目" />
       <recent name="E:\python\程序\python教学" />
       <recent name="E:\python\程序\python教学\数据结构与算法\计算器" />
-      <recent name="E:\python\程序" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\python\程序\python教学\小项目" />
       <recent name="E:\python\程序\python教学\小项目\登录界面" />
       <recent name="E:\python\程序\python教学\小项目\井字棋" />
       <recent name="E:\python\程序\python教学" />
-      <recent name="E:\python\程序\python教学\小项目" />
       <recent name="E:\python\程序\python教学\数据结构与算法\计算器" />
     </key>
   </component>
@@ -358,7 +364,7 @@
       <workItem from="1793682273619" duration="18909000" />
       <workItem from="1793750717702" duration="30311000" />
       <workItem from="1793848273114" duration="27507000" />
-      <workItem from="1793889436575" duration="7892000" />
+      <workItem from="1793889436575" duration="19513000" />
     </task>
     <task id="LOCAL-00001" summary="init pro">
       <option name="closed" value="true" />
@@ -440,7 +446,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793888333049</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="init pro">
+      <option name="closed" value="true" />
+      <created>1793941607863</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1793941607864</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,7 +505,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/$4.coverage" NAME="4多态 覆盖结果" MODIFIED="1792318610008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$V1_0.coverage" NAME="V1.0登录界面 覆盖结果" MODIFIED="1793941203721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/登录界面" />
+    <SUITE FILE_PATH="coverage/$V1_0.coverage" NAME="V1.0登录界面 覆盖结果" MODIFIED="1793949835654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/登录界面" />
     <SUITE FILE_PATH="coverage/$1.coverage" NAME="1 覆盖结果" MODIFIED="1793597385752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
     <SUITE FILE_PATH="coverage/$v1_3.coverage" NAME="v1.3简单的小计算器 覆盖结果" MODIFIED="1793793071884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/计算器" />
     <SUITE FILE_PATH="coverage/$P1001_A_B_Problem.coverage" NAME="P1001 A+B Problem 覆盖结果" MODIFIED="1792743148165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/曼谷题目" />
@@ -513,7 +527,7 @@
     <SUITE FILE_PATH="coverage/$10__.coverage" NAME="10.迭代器&amp;生成器 覆盖结果" MODIFIED="1792499227451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
     <SUITE FILE_PATH="coverage/$5_.coverage" NAME="5静态方法&amp;类方法 覆盖结果" MODIFIED="1792329550314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$3.coverage" NAME="3继承 覆盖结果" MODIFIED="1792286641541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$V0_1.coverage" NAME="V0.1登录界面 覆盖结果" MODIFIED="1793876540020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/登录界面" />
+    <SUITE FILE_PATH="coverage/$V0_1.coverage" NAME="V0.1登录界面 覆盖结果" MODIFIED="1793953253457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/登录界面" />
     <SUITE FILE_PATH="coverage/$A.coverage" NAME="A 覆盖结果" MODIFIED="1793344712125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
     <SUITE FILE_PATH="coverage/$10_29.coverage" NAME="10.29 覆盖结果" MODIFIED="1793244809126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot" />
     <SUITE FILE_PATH="coverage/$6.coverage" NAME="6文件操作 覆盖结果" MODIFIED="1792331418333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/文件操作" />

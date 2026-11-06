@@ -5,7 +5,6 @@
 固定尺寸窗口适合用这些函数精确摆放控件。需要随窗口缩放时，
 可以在一个独立的面板里用 Tkinter 自带的 grid 或 pack。
 """
-
 import tkinter as tk
 
 
