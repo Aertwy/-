@@ -154,7 +154,7 @@ class Login:
             self.mistake = "AccountFormatError"
             return False
         if "," in re_account or "," in re_password:
-            self.mistake = "contain','Error"
+            self.mistake = "IncorrectAccountPassword"
             return False
         with open("book.txt", "r") as f:
             lines = f.readlines()
@@ -181,8 +181,6 @@ class Login:
             return "密码格式错误"
         elif self.mistake == "AccountFormatError":
             return "账号格式错误"
-        elif self.mistake == "contain','Error":
-            return "账号不能含','"
         return True
 
 

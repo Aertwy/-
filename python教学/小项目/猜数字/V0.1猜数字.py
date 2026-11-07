@@ -1,6 +1,9 @@
-import random as r
 import os
+import random as r
+
+
 class Guess:
+
     def __init__(self):
         self.guess = r.randint(0, 101)
     def guesss(self):
