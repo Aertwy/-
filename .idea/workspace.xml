@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="632bfd79-184e-4d59-9601-44482c983b22" name="更改" comment="init pro">
-      <change afterPath="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器/Tkinter使用大全.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器/V0.1机器人.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器/V1.0机器人.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器/pigm.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器/ui_common.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器/草稿.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器/BFS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器/V2_0机器人.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器/Window.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器/过去的版本/V1.1机器人.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器/过去的版本/V1.2机器人.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python教学/小项目/猜数字/V0.1猜数字.py" beforeDir="false" afterPath="$PROJECT_DIR$/python教学/小项目/猜数字/V0.1猜数字.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python教学/小项目/登录界面/V1.0登录界面.py" beforeDir="false" afterPath="$PROJECT_DIR$/python教学/小项目/登录界面/V1.0登录界面.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器/Tkinter使用大全.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器/V0.1机器人.py" beforeDir="false" afterPath="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器/过去的版本/V0.1机器人.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器/V1.0机器人.py" beforeDir="false" afterPath="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器/过去的版本/V1.0机器人.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器/草稿.py" beforeDir="false" afterPath="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器/草稿.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +22,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="76" />
+    <option name="cachedIndexableFilesCount" value="78" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -59,61 +60,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
+      <entry key="MS100" value="6.548846970475213E-94" />
+      <entry key="MS500" value="2.308148547957859E-19" />
+      <entry key="S2" value="2.3929586153753743E-5" />
+      <entry key="S5" value="0.01895229395450938" />
+      <entry key="S10" value="0.18955255837001225" />
+      <entry key="S30" value="0.9061791022144381" />
+      <entry key="S60" value="1.3462461596359732" />
+      <entry key="M2" value="1.8191871773217168" />
+      <entry key="M5" value="7.6476405944331685" />
+      <entry key="M10" value="23.226829010174914" />
+      <entry key="M15" value="36.55982149776462" />
+      <entry key="M30" value="64.08738797136152" />
+      <entry key="H1" value="101.86319791790642" />
+      <entry key="H2" value="182.8910797345586" />
+      <entry key="H4" value="366.6477136770667" />
+      <entry key="D1" value="1826.960265989602" />
+      <entry key="W1" value="8068.1291376002555" />
+    </decayedCancelled>
+    <decayedSelected>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
       <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000000001423734" />
-      <entry key="S10" value="1.0000119325602905" />
-      <entry key="S30" value="1.0252441984006628" />
-      <entry key="S60" value="1.2711390680287558" />
-      <entry key="M2" value="2.509354259288104" />
-      <entry key="M5" value="8.750201997427297" />
-      <entry key="M10" value="16.926861510413467" />
-      <entry key="M15" value="21.875006964590632" />
-      <entry key="M30" value="31.97586381205924" />
-      <entry key="H1" value="62.12944303181794" />
-      <entry key="H2" value="140.0855290594554" />
-      <entry key="H4" value="299.63065799577345" />
-      <entry key="D1" value="1554.601968224358" />
-      <entry key="W1" value="7546.437214847865" />
-    </decayedCancelled>
-    <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.309312513879029E-100" />
-      <entry key="S2" value="1.069697127745079E-25" />
-      <entry key="S5" value="1.0273168280115496E-10" />
-      <entry key="S10" value="1.0139740494701619E-5" />
-      <entry key="S30" value="0.023244671974895662" />
-      <entry key="S60" value="0.19114508508286718" />
-      <entry key="M2" value="0.7221909459796602" />
-      <entry key="M5" value="2.588415713279179" />
-      <entry key="M10" value="4.632745293332908" />
-      <entry key="M15" value="5.73960849888464" />
-      <entry key="M30" value="7.6219914559389865" />
-      <entry key="H1" value="11.94070276662398" />
-      <entry key="H2" value="21.447604451538716" />
-      <entry key="H4" value="39.035836062492685" />
-      <entry key="D1" value="204.7397704740254" />
-      <entry key="W1" value="997.1963763193086" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.000000000722308" />
+      <entry key="S60" value="1.0000268781395008" />
+      <entry key="M2" value="1.005267673411809" />
+      <entry key="M5" value="1.1860365237546513" />
+      <entry key="M10" value="2.0630001590922844" />
+      <entry key="M15" value="3.2703988209956822" />
+      <entry key="M30" value="6.758608574978934" />
+      <entry key="H1" value="12.017502952082841" />
+      <entry key="H2" value="23.167520908766168" />
+      <entry key="H4" value="48.23108252700591" />
+      <entry key="D1" value="241.05428085739797" />
+      <entry key="W1" value="1065.7506852924437" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.05041510995138288" />
-      <entry key="MS500" value="0.5501893046830686" />
-      <entry key="S2" value="0.861247622301833" />
-      <entry key="S5" value="0.9420006760509069" />
-      <entry key="S10" value="0.9705880917989325" />
-      <entry key="S30" value="1.03769188239176" />
-      <entry key="S60" value="1.4535624472739281" />
-      <entry key="M2" value="3.2191838729610605" />
-      <entry key="M5" value="11.298080857936146" />
-      <entry key="M10" value="21.50421331241777" />
-      <entry key="M15" value="27.562017091030235" />
-      <entry key="M30" value="39.55974211278176" />
-      <entry key="H1" value="74.04558763067396" />
-      <entry key="H2" value="161.51722686771728" />
-      <entry key="H4" value="338.6553559920656" />
-      <entry key="D1" value="1759.3340463105606" />
-      <entry key="W1" value="8543.627549431953" />
+      <entry key="MS100" value="5.096972164479788E-5" />
+      <entry key="MS500" value="0.13850404348311576" />
+      <entry key="S2" value="0.6100669962152678" />
+      <entry key="S5" value="0.8373823977663101" />
+      <entry key="S10" value="1.0850215354502213" />
+      <entry key="S30" value="1.8579633025659843" />
+      <entry key="S60" value="2.318363143457269" />
+      <entry key="M2" value="2.8092109648187424" />
+      <entry key="M5" value="8.826506090334307" />
+      <entry key="M10" value="25.283737061114316" />
+      <entry key="M15" value="39.82336990036023" />
+      <entry key="M30" value="70.8374981148926" />
+      <entry key="H1" value="113.8717110677604" />
+      <entry key="H2" value="206.04888746607563" />
+      <entry key="H4" value="414.8682489507502" />
+      <entry key="D1" value="2068.0057202558332" />
+      <entry key="W1" value="9133.873493249555" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -131,81 +132,88 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.1.executor": "Run",
-    "Python.10.29.executor": "Run",
-    "Python.10.30.executor": "Run",
-    "Python.10.迭代器&生成器.executor": "Run",
-    "Python.2.executor": "Run",
-    "Python.2封装.executor": "Run",
-    "Python.3继承.executor": "Run",
-    "Python.4多态.executor": "Run",
-    "Python.5静态方法&类方法.executor": "Run",
-    "Python.6.File operations.executor": "Run",
-    "Python.6文件操作.executor": "Run",
-    "Python.7.正则表达式.executor": "Run",
-    "Python.8.闭包&装饰器.executor": "Run",
-    "Python.9.魔术方法.executor": "Run",
-    "Python.9单例模式&魔术方法.executor": "Run",
-    "Python.A.executor": "Run",
-    "Python.P1000 超级玛丽游戏.executor": "Run",
-    "Python.P1001 A+B Problem.executor": "Run",
-    "Python.P1008 [NOIP 1998 普及组] 三连击.executor": "Run",
-    "Python.Tkinter使用大全.executor": "Run",
-    "Python.V0.1井字棋.executor": "Run",
-    "Python.V0.1小车运货.executor": "Run",
-    "Python.V0.1机器人.executor": "Run",
-    "Python.V0.1猜数字.executor": "Run",
-    "Python.V0.1登录界面.executor": "Run",
-    "Python.V1.0机器人.executor": "Run",
-    "Python.V1.0登录界面.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.patrol_robot.executor": "Run",
-    "Python.runpy.executor": "Run",
-    "Python.ui_common.executor": "Run",
-    "Python.v1.1简单的小计算器.executor": "Run",
-    "Python.v1.3简单的小计算器.executor": "Run",
-    "Python.v1.4简单的小计算器.executor": "Run",
-    "Python.习题.executor": "Run",
-    "Python.井字棋.executor": "Run",
-    "Python.多态.executor": "Run",
-    "Python.封装.executor": "Run",
-    "Python.排序.executor": "Run",
-    "Python.查找.executor": "Debug",
-    "Python.汉诺塔问题.executor": "Run",
-    "Python.目录.executor": "Run",
-    "Python.简单的小机器人控制.executor": "Run",
-    "Python.简单的小计算器.executor": "Run",
-    "Python.类和对象.executor": "Run",
-    "Python.练习.executor": "Run",
-    "Python.练习2.executor": "Run",
-    "Python.练习3.executor": "Run",
-    "Python.草稿.executor": "Run",
-    "Python.贪吃蛇.executor": "Run",
-    "Python.贪吃蛇2.executor": "Run",
-    "Python.默写.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "E:/python/程序/python教学/小项目/仓库搬运机器人模拟器",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "settings.editor.selected.configurable": "MTTitleBarConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.10.29.executor&quot;: &quot;Run&quot;,
+    &quot;Python.10.30.executor&quot;: &quot;Run&quot;,
+    &quot;Python.10.迭代器&amp;生成器.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2封装.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3继承.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4多态.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5静态方法&amp;类方法.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6.File operations.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6文件操作.executor&quot;: &quot;Run&quot;,
+    &quot;Python.7.正则表达式.executor&quot;: &quot;Run&quot;,
+    &quot;Python.8.闭包&amp;装饰器.executor&quot;: &quot;Run&quot;,
+    &quot;Python.9.魔术方法.executor&quot;: &quot;Run&quot;,
+    &quot;Python.9单例模式&amp;魔术方法.executor&quot;: &quot;Run&quot;,
+    &quot;Python.A.executor&quot;: &quot;Run&quot;,
+    &quot;Python.BFS广度优先.executor&quot;: &quot;Run&quot;,
+    &quot;Python.P1000 超级玛丽游戏.executor&quot;: &quot;Run&quot;,
+    &quot;Python.P1001 A+B Problem.executor&quot;: &quot;Run&quot;,
+    &quot;Python.P1008 [NOIP 1998 普及组] 三连击.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Tkinter使用大全.executor&quot;: &quot;Run&quot;,
+    &quot;Python.V0.1井字棋.executor&quot;: &quot;Run&quot;,
+    &quot;Python.V0.1小车运货.executor&quot;: &quot;Run&quot;,
+    &quot;Python.V0.1机器人.executor&quot;: &quot;Run&quot;,
+    &quot;Python.V0.1猜数字.executor&quot;: &quot;Run&quot;,
+    &quot;Python.V0.1登录界面.executor&quot;: &quot;Run&quot;,
+    &quot;Python.V1.0机器人.executor&quot;: &quot;Run&quot;,
+    &quot;Python.V1.0登录界面.executor&quot;: &quot;Run&quot;,
+    &quot;Python.V1.1机器人.executor&quot;: &quot;Run&quot;,
+    &quot;Python.V1.2机器人.executor&quot;: &quot;Run&quot;,
+    &quot;Python.V2.0机器人.executor&quot;: &quot;Run&quot;,
+    &quot;Python.V2_0机器人.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Window.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.patrol_robot.executor&quot;: &quot;Run&quot;,
+    &quot;Python.runpy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ui_common.executor&quot;: &quot;Run&quot;,
+    &quot;Python.v1.1简单的小计算器.executor&quot;: &quot;Run&quot;,
+    &quot;Python.v1.3简单的小计算器.executor&quot;: &quot;Run&quot;,
+    &quot;Python.v1.4简单的小计算器.executor&quot;: &quot;Run&quot;,
+    &quot;Python.习题.executor&quot;: &quot;Run&quot;,
+    &quot;Python.井字棋.executor&quot;: &quot;Run&quot;,
+    &quot;Python.多态.executor&quot;: &quot;Run&quot;,
+    &quot;Python.实验.executor&quot;: &quot;Run&quot;,
+    &quot;Python.封装.executor&quot;: &quot;Run&quot;,
+    &quot;Python.排序.executor&quot;: &quot;Run&quot;,
+    &quot;Python.查找.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.汉诺塔问题.executor&quot;: &quot;Run&quot;,
+    &quot;Python.目录.executor&quot;: &quot;Run&quot;,
+    &quot;Python.简单的小机器人控制.executor&quot;: &quot;Run&quot;,
+    &quot;Python.简单的小计算器.executor&quot;: &quot;Run&quot;,
+    &quot;Python.类和对象.executor&quot;: &quot;Run&quot;,
+    &quot;Python.练习.executor&quot;: &quot;Run&quot;,
+    &quot;Python.练习2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.练习3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.草稿.executor&quot;: &quot;Run&quot;,
+    &quot;Python.贪吃蛇.executor&quot;: &quot;Run&quot;,
+    &quot;Python.贪吃蛇2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.默写.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/python/程序/python教学/小项目/仓库搬运机器人模拟器&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MTTitleBarConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\python\程序\python教学\小项目\仓库搬运机器人模拟器" />
@@ -215,11 +223,11 @@
       <recent name="E:\python\程序\python教学" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\python\程序\python教学\小项目\仓库搬运机器人模拟器\过去的版本" />
       <recent name="E:\python\程序\python教学\小项目" />
       <recent name="E:\python\程序\python教学\小项目\登录界面" />
       <recent name="E:\python\程序\python教学\小项目\井字棋" />
       <recent name="E:\python\程序\python教学" />
-      <recent name="E:\python\程序\python教学\数据结构与算法\计算器" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -370,7 +378,8 @@
       <workItem from="1793750717702" duration="30311000" />
       <workItem from="1793848273114" duration="27507000" />
       <workItem from="1793889436575" duration="42419000" />
-      <workItem from="1794010607287" duration="30272000" />
+      <workItem from="1794010607287" duration="40914000" />
+      <workItem from="1794101959156" duration="37827000" />
     </task>
     <task id="LOCAL-00001" summary="init pro">
       <option name="closed" value="true" />
@@ -468,7 +477,23 @@
       <option name="project" value="LOCAL" />
       <updated>1793955528707</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="init pro">
+      <option name="closed" value="true" />
+      <created>1794054158388</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1794054158389</updated>
+    </task>
+    <task id="LOCAL-00014" summary="init pro">
+      <option name="closed" value="true" />
+      <created>1794060719992</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1794060719992</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,13 +550,15 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/$4.coverage" NAME="4多态 覆盖结果" MODIFIED="1792318610008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$V1_0.coverage" NAME="V1.0机器人 覆盖结果" MODIFIED="1794054129275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器" />
+    <SUITE FILE_PATH="coverage/$V1_0.coverage" NAME="V1.0机器人 覆盖结果" MODIFIED="1794055019488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器" />
     <SUITE FILE_PATH="coverage/$1.coverage" NAME="1 覆盖结果" MODIFIED="1793597385752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
+    <SUITE FILE_PATH="coverage/$BFS.coverage" NAME="BFS广度优先 覆盖结果" MODIFIED="1794114982787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器" />
     <SUITE FILE_PATH="coverage/$v1_3.coverage" NAME="v1.3简单的小计算器 覆盖结果" MODIFIED="1793793071884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/计算器" />
-    <SUITE FILE_PATH="coverage/$.coverage" NAME="草稿 覆盖结果" MODIFIED="1793973358179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器" />
     <SUITE FILE_PATH="coverage/$P1001_A_B_Problem.coverage" NAME="P1001 A+B Problem 覆盖结果" MODIFIED="1792743148165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/曼谷题目" />
+    <SUITE FILE_PATH="coverage/$.coverage" NAME="草稿 覆盖结果" MODIFIED="1794124582551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器" />
     <SUITE FILE_PATH="coverage/$patrol_robot.coverage" NAME="patrol_robot 覆盖结果" MODIFIED="1793340799442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/pipopa" />
     <SUITE FILE_PATH="coverage/$v1_1.coverage" NAME="v1.1简单的小计算器 覆盖结果" MODIFIED="1793609966896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/数据结构与算法/计算器" />
+    <SUITE FILE_PATH="coverage/$V1_1.coverage" NAME="V1.1机器人 覆盖结果" MODIFIED="1794123257697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器" />
     <SUITE FILE_PATH="coverage/$Tkinter.coverage" NAME="Tkinter使用大全 覆盖结果" MODIFIED="1793881931454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目" />
     <SUITE FILE_PATH="coverage/$2.coverage" NAME="2 覆盖结果" MODIFIED="1793592077821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
     <SUITE FILE_PATH="coverage/$P1008__NOIP_1998___.coverage" NAME="P1008 [NOIP 1998 普及组] 三连击 覆盖结果" MODIFIED="1792423112675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/曼谷题目" />
@@ -539,6 +566,7 @@
     <SUITE FILE_PATH="coverage/$10_30.coverage" NAME="10.30 覆盖结果" MODIFIED="1793325951677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot" />
     <SUITE FILE_PATH="coverage/$6_File_operations.coverage" NAME="6.File operations 覆盖结果" MODIFIED="1792367759133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/File operations" />
     <SUITE FILE_PATH="coverage/$ui_common.coverage" NAME="ui_common 覆盖结果" MODIFIED="1794043168821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器" />
+    <SUITE FILE_PATH="coverage/$Window.coverage" NAME="Window 覆盖结果" MODIFIED="1794143401215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器" />
     <SUITE FILE_PATH="coverage/$P1000_.coverage" NAME="P1000 超级玛丽游戏 覆盖结果" MODIFIED="1792743227205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/曼谷题目" />
     <SUITE FILE_PATH="coverage/$main.coverage" NAME="练习 覆盖结果" MODIFIED="1791941947296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$9_.coverage" NAME="9.魔术方法 覆盖结果" MODIFIED="1792403810586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -547,10 +575,12 @@
     <SUITE FILE_PATH="coverage/$10__.coverage" NAME="10.迭代器&amp;生成器 覆盖结果" MODIFIED="1792499227451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
     <SUITE FILE_PATH="coverage/$5_.coverage" NAME="5静态方法&amp;类方法 覆盖结果" MODIFIED="1792329550314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$3.coverage" NAME="3继承 覆盖结果" MODIFIED="1792286641541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$V0_1.coverage" NAME="V0.1机器人 覆盖结果" MODIFIED="1793971975564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器" />
+    <SUITE FILE_PATH="coverage/$V0_1.coverage" NAME="V0.1机器人 覆盖结果" MODIFIED="1794121135781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器" />
     <SUITE FILE_PATH="coverage/$A.coverage" NAME="A 覆盖结果" MODIFIED="1793344712125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学" />
     <SUITE FILE_PATH="coverage/$10_29.coverage" NAME="10.29 覆盖结果" MODIFIED="1793244809126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot" />
+    <SUITE FILE_PATH="coverage/$V2_0.coverage" NAME="V2_0机器人 覆盖结果" MODIFIED="1794128642735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器" />
     <SUITE FILE_PATH="coverage/$6.coverage" NAME="6文件操作 覆盖结果" MODIFIED="1792331418333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/文件操作" />
     <SUITE FILE_PATH="coverage/$runpy.coverage" NAME="runpy 覆盖结果" MODIFIED="1793454377896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../move/Lib" />
+    <SUITE FILE_PATH="coverage/$V1_2.coverage" NAME="V1.2机器人 覆盖结果" MODIFIED="1794123329529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python教学/小项目/仓库搬运机器人模拟器" />
   </component>
 </project>

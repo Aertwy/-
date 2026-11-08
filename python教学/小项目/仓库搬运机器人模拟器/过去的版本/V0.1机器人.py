@@ -84,7 +84,7 @@ class MAIN:
         # print(f"货物位置:{[self.goods_x, self.goods_y]},机器人位置:{[self.machine_x, self.machine_y]}")
         # print(f"距离:{[distance_x, distance_y]}")
         # 移动次数
-        with open("日志.txt", "w", encoding="utf-8") as f:
+        with open("../日志.txt", "w", encoding="utf-8") as f:
             for index, i in enumerate(self.general_log):
                 f.write(f"{index + 1}. {i}\n")
 
@@ -93,7 +93,7 @@ class MAIN:
         print(" " * 10, "日志")
         print("==" * 15)
         print(f"移动次数:{self.num_moves}")
-        with open("日志.txt", "r", encoding="utf-8") as f:
+        with open("../日志.txt", "r", encoding="utf-8") as f:
             lines = f.readlines()
             for line in lines:
                 print(line)

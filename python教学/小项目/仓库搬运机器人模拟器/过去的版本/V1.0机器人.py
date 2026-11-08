@@ -1,6 +1,9 @@
-"""v0.2
-新增头部概念，使用向量来来求出障碍的位置，删掉原有的4个方向控制,改为左右转来控制方向
+"""v1.0
+新增头部概念，使用向量来来求出障碍的位置，
+删掉原有的4个方向控制,改为左右转来控制方向
+可以稍微稍微带一点点的避障捏，OVO
 """
+
 
 
 class MAIN:
@@ -15,7 +18,6 @@ class MAIN:
         self.num_moves = 0  # 移动次数
         self.error = ""  # 错误显示
         self.speed = 1  # 移动速度
-
     # ====================移动类=============================
     # 左转
     def turn_left(self):
@@ -33,17 +35,28 @@ class MAIN:
 
     # 移动
     def move(self):
+        if self.move_error():
+            self.machine_x += self.machine_dx  # 判断边界
+            self.machine_y += self.machine_dy
+            return True
+        return False
+
+    def move_error(self):
         if not (0 <= (self.machine_x + self.machine_dx) <= self.map_x
                 and
                 0 <= (self.machine_y + self.machine_dy) <= self.map_y):
             self.error = "BoundaryError"
             return False
-        else:
-            # 判断边界
-            self.machine_x += self.machine_dx
-            self.machine_y += self.machine_dy
-        return True
+        for i in self.obstacle:
+            obstacle_x, obstacle_y = i  # 障碍坐标
 
+            if (self.machine_x + self.machine_dx == obstacle_x
+                    and
+                    self.machine_y + self.machine_dx == obstacle_y
+            ):
+                self.error = "CrashObstacleError"
+                return False
+        return True
     # 终点决策
     def direction(self):
         # 判断距离
@@ -112,7 +125,6 @@ class MAIN:
         left_x, left_y = self.machine_dy, -self.machine_dx  # 左转位置
         right_x, right_y = -self.machine_dy, self.machine_dx  # 右转位置
         front_blocked, right_blocked, left_blocked = False, False, False
-
         for i in self.obstacle:  # 障碍物坐标
             obstacle_x, obstacle_y = i  # 障碍物
             vec_x = obstacle_x - self.machine_x  # 相对向量
@@ -129,7 +141,6 @@ class MAIN:
                 right_blocked = True
             elif temp == [0, 1]:  # 左边
                 left_blocked = True
-
         return front_blocked, left_blocked, right_blocked
 
     # ======================数据类================================
@@ -138,7 +149,7 @@ class MAIN:
         # print(f"货物位置:{[self.goods_x, self.goods_y]},机器人位置:{[self.machine_x, self.machine_y]}")
         # print(f"方向:{self.mobile_log }")
         # 移动次数
-        with open("日志.txt", "w", encoding="utf-8") as f:
+        with open("../日志.txt", "w", encoding="utf-8") as f:
             for index, i in enumerate(self.general_log):
                 f.write(f"{index + 1}. {i}\n")
 
@@ -147,7 +158,7 @@ class MAIN:
         print(" " * 10, "日志")
         print("==" * 15)
         print(f"移动次数:{self.num_moves}")
-        with open("日志.txt", "r", encoding="utf-8") as f:
+        with open("../日志.txt", "r", encoding="utf-8") as f:
             lines = f.readlines()
             for line in lines:
                 print(line)
@@ -161,6 +172,8 @@ class MAIN:
             return "direction函数判断错误"
         elif self.error == "RouteError":
             return "无路可走"
+        elif self.error == "CrashObstacleError":
+            return "撞到障碍"
         return "无错误"
 
     # =====================运行===================================
@@ -168,15 +181,15 @@ class MAIN:
     def run(self):
         while True:
             direction = self.direction()  # 先找终点位置
-            if direction == False:  # 到终点了
+            if not direction:  # 到终点了
                 print("到达终点")
                 self.record_log()
                 break
             elif direction:  # 没到终点，执行避障判断
-                self.decide()
-                if self.move():
-                    self.general_log.append(f"方向:{self.mobile_log},位置:{self.machine_x, self.machine_y}")
-                    self.num_moves += 1  # 移动次数
+                if self.decide() != -1:
+                    if self.move():
+                        self.general_log.append(f"方向:{self.mobile_log},位置:{self.machine_x, self.machine_y}")
+                        self.num_moves += 1  # 移动次数
             error = self.m_error()
             if error != "无错误":
                 print(error)
@@ -186,6 +199,6 @@ class MAIN:
 if __name__ == "__main__":
     machine = [2, 2]  # 机器初始位置
     goods = [4, 3]  # 货物位置
-    obstacle = [[3, 2], [2, 1], [3, 3]]
+    obstacle = [[2, 1], [3, 3]]
     m = MAIN(machine, goods, obstacle)
     m.run()

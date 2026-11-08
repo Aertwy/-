@@ -1,3 +1,4 @@
+"""
 machine_x, machine_y = 0, 5
 
 if not (0 < machine_x < 5
@@ -7,7 +8,7 @@ if not (0 < machine_x < 5
 else:
     print("不可以报错")
     # 判断方向
-""" def direction(self):
+ def direction(self):
         #判断距离
         distance_x = self.goods_x - self.machine_x
         distance_y = self.goods_y - self.machine_y
@@ -51,3 +52,18 @@ else:
         self.error = "CannotDetermineError"
         return -1
     """
+import tkinter as tk
+
+root = tk.Tk()
+
+w = tk.Canvas(root, width=200, height=100)
+w.pack()
+
+# 画一条黄色的横线
+w.create_line(0, 50, 200, 50, fill="yellow")
+# 画一条红色的竖线（虚线）
+w.create_line(100, 0, 100, 100, fill="red", dash=(4, 4))
+# 中间画一个蓝色的矩形
+w.create_rectangle(50, 25, 150, 75, fill="blue")
+
+root.mainloop()
