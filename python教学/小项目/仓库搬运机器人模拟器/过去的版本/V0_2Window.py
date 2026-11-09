@@ -1,11 +1,12 @@
 import tkinter as tk
 
-import BFS
 import ui_common as ui
-from V2_0机器人 import MAIN
+
+from V2_1机器人 import MAIN
 
 
-# v0,2加上了动态避障，走一步算一步，并且分开了运算
+# v0,2加上了动态避障，走一步算一步，并且分开了运算，但是没加动态按钮了
+# 但是我打算界面直接用ai写了，我主要去研究避障之类的，，，
 class Window:
     def __init__(self):
         self.is_running = False  # 状态
@@ -20,7 +21,7 @@ class Window:
         goods = (4, 4)  # 货物位置
         # 障碍模板设置，蛇形：(0,1),(1,1),(2,1),(3,1),(4,1),(1,3),(2,3),(3,3),(4,3),(5,3)
         # 正常:(4, 2),(3, 3),(2,3),(0,3),(2,5),(1,1),(3,4),(4,5),(2,0)
-        obstacle = ((4, 2), (3, 3), (2, 3), (0, 3), (2, 5), (1, 1), (3, 4), (4, 5), (2, 0))  # 障碍物
+        obstacle = ((0, 1), (1, 1), (2, 1), (3, 1), (4, 1), (1, 3), (2, 3), (3, 3), (4, 3), (5, 3))  # 障碍物
         self.man = MAIN(machine, goods, obstacle)
         # 货物位置
         goods_x, goods_y = self.man.goods_x, self.man.goods_y
@@ -79,55 +80,21 @@ class Window:
 
     def start(self):
         if not self.is_running:
-            self.man.route = BFS.bfs(
-                start=(self.man.machine_x, self.man.machine_y),  # 开始位置
-                end=(self.man.goods_x, self.man.goods_y),  # 货物位置
-                obstacle=self.man.obstacle,  # 障碍位置
-                map_size=(self.man.map_x, self.man.map_y))  # 地图位置
+            self.start_run()
 
-            if (self.man.goods_x == self.man.machine_x  # 已经到达货物位置
-                    and
-                    self.man.goods_y == self.man.machine_y):
-                self.is_running = False
-                self.man.record_log()
-                return True
-            elif self.man.route is not None:
-                self.is_running = True
-                self.ui.after(500, self.move_step)
-
-            elif self.man.route is None:  # 无法找到路线
-                print("找不到路")
-                self.man.error = "RouteNotFoundError"
-                self.is_running = False
-                return False
-
-    def move_step(self):
-        direction = self.man.decision_bfs()
-        if isinstance(direction, tuple):
-            self.man.machine_dx, self.man.machine_dy = direction[0], direction[1]
-            if self.man.move():
-                self.canvas.move(self.good_car, self.man.machine_dx * 60, self.man.machine_dy * 60)
-                self.man.general_log.append(
-                    f"方向:{self.man.towards[self.man.machine_dx, self.man.machine_dy]},位置:{self.man.machine_x, self.man.machine_y}")
-                self.man.num_moves += 1  # 移动次数
-            else:
-                self.is_running = False
-                return False
-        else:
-            self.man.error = "RouteNotFoundError"
+    def start_run(self):
+        self.is_running = True
+        bfs_run = self.man.bfs_run()
+        if bfs_run == 123:
+            print("已到达终点位置")
             self.is_running = False
-            return False
-        if (self.man.goods_x == self.man.machine_x  # 已经到达货物位置
-                and
-                self.man.goods_y == self.man.machine_y):
-            self.man.record_log()
-            print("到达货物位置！")
+        elif not bfs_run:
+            print("错误")
+            print(self.man.m_error())
             self.is_running = False
-            return True
-        else:
-            self.is_running = False
-            if self.start():
-                return True
+        elif bfs_run == 111:
+            self.canvas.move(self.good_car, self.man.machine_dx * 60, self.man.machine_dy * 60)
+            self.ui.after(500, self.start_run)
 
 
 if __name__ == "__main__":

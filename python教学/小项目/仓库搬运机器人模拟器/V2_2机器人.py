@@ -1,12 +1,15 @@
-"""v2.0
-加上了界面
+"""v2.1
+加上了如果要用窗口可以自动计算路线
 """
 import BFS
+
+
 class MAIN:
     def __init__(self, machine, goods, obstacle):
         self.machine_x, self.machine_y = machine  # 机器人实际初置
         self.machine_dx, self.machine_dy = 0, 1  # 机器人方向为南方
-        self.goods_x, self.goods_y = goods  # 货物放置
+        self.goods = goods
+        self.goods_x, self.goods_y = None, None  # 货物放置
         self.map_x, self.map_y = 5, 5  # 地图边界
         self.obstacle = obstacle  # 障碍坐标
         self.general_log = []  # 记录日志
@@ -50,7 +53,7 @@ class MAIN:
         # print(f"货物位置:{[self.goods_x, self.goods_y]},机器人位置:{[self.machine_x, self.machine_y]}")
         # print(f"方向:{self.mobile_log }")
         # 移动次数
-        with open("日志.txt", "w", encoding="utf-8") as f:
+        with open("../日志.txt", "w", encoding="utf-8") as f:
             for index, i in enumerate(self.general_log):
                 f.write(f"{index + 1}. {i}\n")
 
@@ -59,7 +62,7 @@ class MAIN:
         print(" " * 10, "日志")
         print("==" * 15)
         print(f"移动次数:{self.num_moves}")
-        with open("日志.txt", "r", encoding="utf-8") as f:
+        with open("../日志.txt", "r", encoding="utf-8") as f:
             lines = f.readlines()
             for line in lines:
                 print(line, end="")
@@ -84,8 +87,89 @@ class MAIN:
         direction_x, direction_y = dx - self.machine_x, dy - self.machine_y
         return direction_x, direction_y
 
-    # =====================运行===================================
+    # 取货路线d=|x2-x1|+|y2-y1|
+    def cargo(self):
+        i = 0
+        if self.goods_x is None and self.goods_y is None:
+            for subscript, coordinate in enumerate(self.goods):
+                route = BFS.bfs(
+                    start=(self.machine_x, self.machine_y),  # 开始位置
+                    end=(coordinate[0], coordinate[1]),  # 货物位置
+                    obstacle=self.obstacle,  # 障碍位置
+                    map_size=(self.map_x, self.map_y)  # 地图位置
+                )
+                if route is None:  # 如果都被挡住了i+1
+                    i += 1
+                    if len(self.goods) == i:  # 如果货物的长度和i相等，说明全被围住了，不可以继续了
+                        self.error = "RouteNotFoundError"
+                        return False
+                    else:
+                        continue
+                elif subscript == 0:
+                    key = len(route)
+                    add = subscript
+                    i = 0
+                else:
+                    if key > len(route):
+                        key = len(route)
+                        add = subscript
+                        i = 0
+                # 最近的路线
+            self.goods_x, self.goods_y = self.goods[add]
+            return True
+        else:
+            return False
 
+    # 删除坐标
+    def cargo_del(self):
+        for subscript, coordinate in enumerate(self.goods):
+            if coordinate[0] == self.goods_x and coordinate[1] == self.goods_y:
+                self.goods.pop(subscript)
+                self.goods_x, self.goods_y = None, None
+                return True
+        return False
+
+    # 窗口运行
+    def bfs_run(self):
+        self.cargo()
+        self.route = BFS.bfs(
+            start=(self.machine_x, self.machine_y),  # 开始位置
+            end=(self.goods_x, self.goods_y),  # 货物位置
+            obstacle=self.obstacle,  # 障碍位置
+            map_size=(self.map_x, self.map_y)  # 地图位置
+        )
+
+        # 判断是否到达终点
+        if (self.goods_x == self.machine_x  # 已经到达货物位置
+                and
+                self.goods_y == self.machine_y):
+            self.cargo_del()
+            if self.goods:
+                return 124  # 还有坐标
+            else:
+                self.record_log()
+                return 123  # 没有坐标了
+        # 找到路线
+        elif self.route is not None:
+            # 直接赋值给方向
+            direction = self.decision_bfs()
+            if isinstance(direction, tuple):
+                self.machine_dx, self.machine_dy = direction[0], direction[1]
+                if self.move():
+                    self.general_log.append(
+                        f"方向:{self.towards[self.machine_dx, self.machine_dy]},位置:{self.machine_x, self.machine_y}")
+                    self.num_moves += 1  # 移动次数
+                    return 111
+                else:
+                    return False
+            else:
+                self.error = "RouteNotFoundError"
+                return False
+        elif self.route is None:  # 无法找到路线
+            self.error = "RouteNotFoundError"
+            return False
+
+    # =====================自身运行===================================
     # 运行
     def se(self):
         self.route = BFS.bfs(
@@ -129,8 +213,8 @@ class MAIN:
 
 if __name__ == "__main__":
     # =======man函数调用==========
-    machine = (0, 0)  # 机器初始位置
-    goods = (4, 3)  # 货物位置
+    machine = (2, 2)  # 机器初始位置
+    goods = [(0, 0), (2, 3), (5, 5)]  # 货物位置
     obstacle = ((4, 2), (5, 3), (3, 3))
     man = MAIN(machine, goods, obstacle)
-    man.run()
+    man.cargo()
