@@ -2,8 +2,6 @@
 加上了界面
 """
 import BFS
-
-
 class MAIN:
     def __init__(self, machine, goods, obstacle):
         self.machine_x, self.machine_y = machine  # 机器人实际初置
